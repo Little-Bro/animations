@@ -81,6 +81,9 @@ h1 {
   h1 {
     color: #5585b5;
   }
+  button {
+    color: #5585b5;
+  }
 }
 
 .middlepane {
@@ -94,7 +97,11 @@ h1 {
   height: 80vh;
   border: solid;
   border-color: #53a8b6;
+  color: #53a8b6;
   h1 {
+    color: #53a8b6;
+  }
+  button {
     color: #53a8b6;
   }
 }
@@ -110,7 +117,11 @@ h1 {
   height: 80vh;
   border: solid;
   border-color: #79c2d0;
+  color: #79c2d0;
   h1 {
+    color: #79c2d0;
+  }
+  button {
     color: #79c2d0;
   }
 }
