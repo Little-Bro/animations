@@ -8,6 +8,12 @@ let planetRelHistory;
 let traceCheckBox;
 let reference = 'héliocentrique';
 
+let earthImg;
+
+function preload() {
+	earthImg = loadImage('./earth.png');
+}
+
 function setup() {
   createCanvas(750, 750);
   traceCheckBox = createCheckbox('Trajectoire visible', false);

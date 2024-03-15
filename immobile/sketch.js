@@ -67,7 +67,7 @@ function drawAlienPov() {
   circle(sunX, sunY, 60);
   
   // earth
-  theta += PI / 100;
+  theta += PI / 200;
   let earthX = sunX + 100 * cos(theta);
   let earthY = sunY + 100 * sin(theta);
   fill(0, 0, 255);

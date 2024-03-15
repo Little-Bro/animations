@@ -18,6 +18,10 @@ class Body {
     noStroke();
     fill(this.color.x, this.color.y, this.color.z);
     circle(this.pos.x, this.pos.y, this.radius);
+    if (this.name == 'earth') {
+      imageMode(CENTER);
+			image(earthImg, this.pos.x, this.pos.y);
+    }
   }
 
   update(orbitedBodyPos) {
