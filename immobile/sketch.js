@@ -40,7 +40,6 @@ function drawGeoPov() {
   rect(0, 0, 600, 600);
 	line(0, height/2 + 60, width, height/2 + 60);
   moveCloud();
-  //image(cloudImg, 100, 100);
   imageMode(CORNER);
   image(floorImg, 0, height/2 + 60);
   imageMode(CENTER);
@@ -57,10 +56,15 @@ function drawAlienPov() {
   
   
   // sun
-  fill(255, 252, 29);
   let sunX = width/2 - 100;
   let sunY = height /2 + 100;
-  image(sunImg, sunX, sunY);
+  noStroke();
+  fill(247, 70, 0);
+  circle(sunX, sunY, 80);
+  fill(247, 247, 0);
+  circle(sunX, sunY, 70);
+  fill(255);
+  circle(sunX, sunY, 60);
   
   // earth
   theta += PI / 100;

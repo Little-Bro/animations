@@ -86,9 +86,13 @@ function draw() {
   planet.show();
 
   // displaying the sun
-  noStroke();
-  fill(250, 250, 5);
+  noStroke();  
+  fill(247, 70, 0);
   circle(0, 0, 80);
+  fill(247, 247, 0);
+  circle(0, 0, 72);
+  fill(255);
+  circle(0, 0, 60);
 }
 
 function mouseClicked() {
