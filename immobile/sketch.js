@@ -4,15 +4,15 @@ let earthImg;
 let cloudX, cloudY;
 
 function preload() {
-	marioStandingImg = loadImage('./marioStanding.png');
-	luigiStandingImg = loadImage('./luigiStanding.png');
-	cloudImg = loadImage('./cloud.png');
-	floorImg = loadImage('./floor.png');
-	marioImg = loadImage('./mario.png');
-	earthImg = loadImage('./earth.png');
-	sunImg = loadImage('./sun.png');
-  alienImg = loadImage('./alien.png');
-  alienPlanetImg = loadImage('./alienPlanet.png');
+	marioStandingImg = loadImage('./images/marioStanding.png');
+	luigiStandingImg = loadImage('./images/luigiStanding.png');
+	cloudImg = loadImage('./images/cloud.png');
+	floorImg = loadImage('./images/floor.png');
+	marioImg = loadImage('./images/mario.png');
+	earthImg = loadImage('./images/earth.png');
+	sunImg = loadImage('./images/sun.png');
+  alienImg = loadImage('./images/alien.png');
+  alienPlanetImg = loadImage('./images/alienPlanet.png');
 }
 
 function setup() {
@@ -104,7 +104,6 @@ function drawAlienPov() {
 
 function mousePressed() {
 	pov = pov == 'géocentrique' ? 'alien' : 'géocentrique';
-  console.log(pov);
 }
 
 function moveCloud() {
