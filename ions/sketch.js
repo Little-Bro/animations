@@ -8,21 +8,32 @@ let particule;
 let nature;
 let theta = 0;
 let ionisationBouton;
+let hydroBouton;
+let element = 'sodium';
 
 function setup() {
 	createCanvas(700, 700);
   particule = new Atome(11, 12);
   ionisationBouton = createButton('Ionisation');
+  hydroBouton = createButton('Hydrogène');
   ionisationBouton.mousePressed(() => ionisation());
+  hydroBouton.mousePressed(() => {
+		element = 'hydrogene';
+    particule = new Atome(1, 0);
+  });
+  
 }
 function draw() {
   background(255);
   noFill();
   rect(0, 0, width, height);
+  
+  // mouvement des électrons
   for (let i = 0; i < particule.thetas.length; i++) {
 		particule.thetas[i] += PI/200;
   }
- 	particule.show();
+ 	
+  particule.show();
   
   // TEXTE EN HAUT A GAUCHE
  	fill(0);
@@ -59,7 +70,12 @@ function draw() {
   
   // TEXTE EN BAS A DROITE
   textSize(30);
-  text(natureTexte + '   Na', 500, 675);
+  let formule = '';
+  if (element == 'sodium')
+    formule = 'Na';
+  else if (element == 'hydrogene')
+    formule = 'H';
+  text(natureTexte + '   ' + formule, 500, 675);
   textSize(16);
   if (natureTexte == 'atome') {
 		text(particule.protons, 588, 680);
@@ -70,5 +86,9 @@ function draw() {
 }
   
 function ionisation() {
-	particule.ionise(2, 'cation');
+  if (element == 'sodium')
+		particule.ionise(2, 'cation');
+  else if (element == 'hydrogene') {
+		particule.ionise(1, 'cation');
+  }
 }
