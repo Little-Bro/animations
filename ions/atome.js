@@ -1,6 +1,6 @@
 class Atome {
 	constructor(protons, neutrons) {
-    let offset = 15;
+    let offset = 30;
     this.isAtom = true;
 		this.protons = protons;
 		this.neutrons = neutrons;
@@ -31,30 +31,34 @@ class Atome {
   }
   
   show() {
+    noStroke();
     //neutrons
    	for (let i = 0; i < this.neutrons; i++) {
-		  fill(0, 255, 0);
+		  fill(0, 255, 0, 150);
       circle(this.neutronsPos[i].x, this.neutronsPos[i].y, 15);
       for (let j = 0; j < i; j++) {
 				let d = dist(this.neutronsPos[i].x, this.neutronsPos[i].y, this.neutronsPos[j].x, this.neutronsPos[j].y)
         if (d < 10) {
         	this.neutronsPos[i].add(p5.Vector.random2D());
         }
-      }
+      } 
     }
     // protons
     for (let i = 0; i < this.protons; i++) {
-			fill(255, 0, 0);
+			fill(255, 0, 0, 150);
+      stroke(255, 0, 0);
       circle(this.protonsPos[i].x, this.protonsPos[i].y, 15);
+      stroke(1);
       line(this.protonsPos[i].x - 4, this.protonsPos[i].y, this.protonsPos[i].x + 4, this.protonsPos[i].y)
       line(this.protonsPos[i].x, this.protonsPos[i].y - 4, this.protonsPos[i].x, this.protonsPos[i].y + 4)
       for (let j = 0; j < i; j++) {
 				let d = dist(this.protonsPos[i].x, this.protonsPos[i].y, this.protonsPos[j].x, this.protonsPos[j].y)
-        if (d < 15) {
+        if (d < 10) {
         	this.protonsPos[i].add(p5.Vector.random2D());
         }
-      }
+      } 
     }
+    stroke(0);
     
     // électrons
     for (let i = 0; i < this.electrons; i++) {
