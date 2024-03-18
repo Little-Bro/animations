@@ -7,6 +7,7 @@
 let particule;
 let nature;
 let theta = 0;
+let nbElectrons;
 let ionisationBouton;
 let hydroBouton, sodiumBouton, chloreBouton;
 let element;  
@@ -15,6 +16,7 @@ function setup() {
 	createCanvas(700, 700);
   element = 'hydrogene';
   particule = new Atome(1, 0);
+  nbElectrons = particule.electrons;
   
   // bouton : ionisation
   ionisationBouton = createButton('Ionisation');
@@ -33,17 +35,28 @@ function setup() {
   
   hydroBouton.mousePressed(() => {
 		element = 'hydrogene';
+    for (const key in particule) {
+			delete particule[key];
+    }
     particule = new Atome(1, 0);
+    nbElectrons = particule.electrons;
   });
   
   sodiumBouton.mousePressed(() => {
 		element = 'sodium';
+    for (const key in particule) {
+			delete particule[key];
+    }
     particule = new Atome(11, 12);
+    nbElectrons = particule.electrons;
   });
   chloreBouton.mousePressed(() => {
 		element = 'chlore';
-    particule = new Atome(17, 18);
-    console.log('clicked')
+    for (const key in particule) {
+			delete particule[key];
+    }
+    particule = new Atome(17, 18); 
+    nbElectrons = particule.electrons;
   });
 }
 function draw() {
@@ -57,7 +70,7 @@ function draw() {
   }
   
   particule.show();
-  
+  particule.checkBoundaries();
   // TEXTE EN HAUT A GAUCHE
  	fill(0);
   textSize(24);
@@ -68,14 +81,14 @@ function draw() {
   fill(0);
   text('et', 175, 30);
   fill(0, 0, 255);
-  text(`${particule.electrons} ${particule.electrons > 1 ? 'électrons' : 'électron'}`, 205, 30);
+  text(`${nbElectrons} ${nbElectrons > 1 ? 'électrons' : 'électron'}`, 205, 30);
   fill(0);
   text('je suis un', 340, 30);
-  natureTexte = parseInt(particule.protons) == parseInt(particule.electrons) ? 'atome' : 'ion';
+  natureTexte = parseInt(particule.protons) == parseInt(nbElectrons) ? 'atome' : 'ion';
 	textStyle(BOLD);
   text(natureTexte, 445, 30);
   textStyle(NORMAL);
-  chargeElec = parseInt(particule.protons) - parseInt(particule.electrons);
+  chargeElec = parseInt(particule.protons) - parseInt(nbElectrons);
   text(`Charge électrique :`, 10, 70);
  	let charge = chargeElec.toString().split("").reverse().join("") ;
   if (chargeElec > 0) {
@@ -114,10 +127,12 @@ function draw() {
 }
   
 function ionisation() {
-  if (element == 'sodium')
-		particule.ionise(1, 'cation');
-  else if (element == 'hydrogene') 
-		particule.ionise(1, 'cation');
+  if (element == 'sodium') {
+	  particule.ionise(1, 'cation');
+  }
+  else if (element == 'hydrogene') {
+  	particule.ionise(1, 'cation');
+  }
    else if (element == 'chlore') 
 		particule.ionise(1, 'anion');
 }

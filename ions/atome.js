@@ -9,6 +9,9 @@ class Atome {
     this.neutronsPos = [];
     this.electronsPos = [];
     this.thetas = [];
+    this.rayons = [];
+    this.tej = false;
+    this.comeIn = false;
     
     // protons
     for (let i = 0; i < this.protons; i++) {
@@ -31,6 +34,7 @@ class Atome {
   }
   
   show() {
+    
     noStroke();
     //neutrons
    	for (let i = 0; i < this.neutrons; i++) {
@@ -61,30 +65,51 @@ class Atome {
     stroke(0);	
     
     // électrons
-    for (let i = 0; i < this.electrons; i++) {
+    for (let i = this.electrons - 1; i >= 0; i--) {
     	fill(0, 0, 255);
       let x1 = this.electronsPos[i].x;
       let y1 = this.electronsPos[i].y;
       let x2 = width/2;
       let y2 = height/2;
       let r = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
-      let x = width/2 + r * cos(this.thetas[i]);
-      let y = height/2 + r * sin(this.thetas[i]);
+      this.rayons.push(r);
+      let x = width/2 + this.rayons[i] * cos(this.thetas[i]);
+      let y = height/2 + this.rayons[i] * sin(this.thetas[i]);
       circle(x, y, 10);
       line(x - 4, y, x + 4, y)
     }
   }
   
+  checkBoundaries() {
+      if (this.tej) {
+				this.rayons[0] += 5;
+        if (this.rayons[0] > 500) {
+          this.tej = false;
+        }
+      }
+    if (this.comeIn) {
+      this.rayons[this.electronsPos.length-1] -= 5;
+      if (this.rayons[this.electronsPos.length-1] < 100) {
+        this.comeIn = false;
+      }
+    }
+  }
+  
   ionise(number, type) {
-    if (type == 'cation')
-			this.electrons -= number;
+    if (type == 'cation') {
+			nbElectrons -= number;
+      this.tej = true;
+    }
     else if (type == 'anion') {
-      this.electrons += number
+      
+      nbElectrons += number;	
+      this.comeIn = true;
 			for (let i = 0; i < number; i++) {
-        this.thetas.push(random(0, TWO_PI));
-        let pos = createVector(width/2 + random(100, 250), height/2 + random(100, 250));
+        this.thetas.push(0);
+        let pos = createVector(900, 900);
         this.electronsPos.push(pos);
     	}
+      this.electrons += number;
     }
     ;
   }
