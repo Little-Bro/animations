@@ -8,7 +8,7 @@ let particule;
 let nature;
 let theta = 0;
 let ionisationBouton;
-let hydroBouton, sodiumBouton;
+let hydroBouton, sodiumBouton, chloreBouton;
 let element;  
 
 function setup() {
@@ -19,20 +19,31 @@ function setup() {
   // bouton : ionisation
   ionisationBouton = createButton('Ionisation');
   ionisationBouton.position(450, height - 25);
+  ionisationBouton.mousePressed(() => ionisation());
   
   // boutons : éléments
   hydroBouton = createButton('Hydrogène');
   hydroBouton.position(280, 40);
+
   sodiumBouton = createButton('Sodium');
   sodiumBouton.position(280, 100);
-  ionisationBouton.mousePressed(() => ionisation());
+  
+  chloreBouton = createButton('Chlore');
+  chloreBouton.position(280, 160);
+  
   hydroBouton.mousePressed(() => {
 		element = 'hydrogene';
     particule = new Atome(1, 0);
   });
+  
   sodiumBouton.mousePressed(() => {
 		element = 'sodium';
     particule = new Atome(11, 12);
+  });
+  chloreBouton.mousePressed(() => {
+		element = 'chlore';
+    particule = new Atome(17, 18);
+    console.log('clicked')
   });
 }
 function draw() {
@@ -87,13 +98,17 @@ function draw() {
     formule = 'Na';
   else if (element == 'hydrogene')
     formule = 'H';
+  else if (element == 'chlore')
+    formule ='Cl';
   text(natureTexte + '   ' + formule, 500, 675);
   textSize(16);
   if (natureTexte == 'atome') {
 		text(particule.protons, 588, 680);
 		text(particule.protons + particule.neutrons, 588, 660);
   } else {
-    if (charge == 1) charge = '';
+    if (chargeElec == 1) charge = '';
+    if (chargeElec == -1) charge = '-';
+    
 		text(charge + `${chargeElec > 0 ? '+' : ''}`, 605, 665);
   }
 }
@@ -101,7 +116,8 @@ function draw() {
 function ionisation() {
   if (element == 'sodium')
 		particule.ionise(1, 'cation');
-  else if (element == 'hydrogene') {
+  else if (element == 'hydrogene') 
 		particule.ionise(1, 'cation');
-  }
+   else if (element == 'chlore') 
+		particule.ionise(1, 'anion');
 }
