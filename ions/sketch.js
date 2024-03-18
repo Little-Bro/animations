@@ -8,20 +8,32 @@ let particule;
 let nature;
 let theta = 0;
 let ionisationBouton;
-let hydroBouton;
-let element = 'sodium';
+let hydroBouton, sodiumBouton;
+let element;  
 
 function setup() {
 	createCanvas(700, 700);
-  particule = new Atome(11, 12);
+  element = 'hydrogene';
+  particule = new Atome(1, 0);
+  
+  // bouton : ionisation
   ionisationBouton = createButton('Ionisation');
+  ionisationBouton.position(450, height - 25);
+  
+  // boutons : éléments
   hydroBouton = createButton('Hydrogène');
+  hydroBouton.position(280, 40);
+  sodiumBouton = createButton('Sodium');
+  sodiumBouton.position(280, 100);
   ionisationBouton.mousePressed(() => ionisation());
   hydroBouton.mousePressed(() => {
 		element = 'hydrogene';
     particule = new Atome(1, 0);
   });
-  
+  sodiumBouton.mousePressed(() => {
+		element = 'sodium';
+    particule = new Atome(11, 12);
+  });
 }
 function draw() {
   background(255);
@@ -32,7 +44,7 @@ function draw() {
   for (let i = 0; i < particule.thetas.length; i++) {
 		particule.thetas[i] += PI/200;
   }
- 	
+  
   particule.show();
   
   // TEXTE EN HAUT A GAUCHE
@@ -81,13 +93,14 @@ function draw() {
 		text(particule.protons, 588, 680);
 		text(particule.protons + particule.neutrons, 588, 660);
   } else {
+    if (charge == 1) charge = '';
 		text(charge + `${chargeElec > 0 ? '+' : ''}`, 605, 665);
   }
 }
   
 function ionisation() {
   if (element == 'sodium')
-		particule.ionise(2, 'cation');
+		particule.ionise(1, 'cation');
   else if (element == 'hydrogene') {
 		particule.ionise(1, 'cation');
   }

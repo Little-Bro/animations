@@ -58,7 +58,7 @@ class Atome {
         }
       } 
     }
-    stroke(0);
+    stroke(0);	
     
     // électrons
     for (let i = 0; i < this.electrons; i++) {
