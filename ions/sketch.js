@@ -22,14 +22,14 @@ function setup() {
   ionisationBouton.mousePressed(() => ionisation());
   
   // boutons : éléments
-  hydroBouton = createButton('Hydrogène');
-  hydroBouton.position(280, 40);
+  hydroBouton = createButton('Hydrogène ⭐');
+  hydroBouton.position(260, 40);
 
-  sodiumBouton = createButton('Sodium');
-  sodiumBouton.position(280, 100);
+  sodiumBouton = createButton('Sodium 🧂');
+  sodiumBouton.position(260, 100);
   
-  chloreBouton = createButton('Chlore');
-  chloreBouton.position(280, 160);
+  chloreBouton = createButton('Chlore 🏊‍♂️');
+  chloreBouton.position(260, 160);
   
   hydroBouton.mousePressed(() => {
 		element = 'hydrogene';
@@ -107,7 +107,7 @@ function draw() {
 		text(particule.protons + particule.neutrons, 588, 660);
   } else {
     if (chargeElec == 1) charge = '';
-    if (chargeElec == -1) charge = '-';
+    if (chargeElec == -1) charge = '-'; 
     
 		text(charge + `${chargeElec > 0 ? '+' : ''}`, 605, 665);
   }
