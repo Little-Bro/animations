@@ -1,7 +1,6 @@
 class Atome {
 	constructor(protons, neutrons) {
     let offset = 30;
-    this.isAtom = true;
 		this.protons = protons;
 		this.neutrons = neutrons;
     this.electrons = this.protons;
@@ -10,8 +9,7 @@ class Atome {
     this.electronsPos = [];
     this.thetas = [];
     this.rayons = [];
-    this.tej = false;
-    this.comeIn = false;
+    this.electronsObj = [];
     
     // protons
     for (let i = 0; i < this.protons; i++) {
@@ -27,14 +25,16 @@ class Atome {
     
     // electrons
     for (let i = 0; i < this.protons; i++) {
-      this.thetas.push(random(0, TWO_PI));
-    	let pos = createVector(width/2 + random(100, 250), height/2 + random(100, 250));
-      this.electronsPos.push(pos);
+      if (i == 0 || i == 1)
+      	this.electronsObj.push(new Electron(100));
+      else if (i > 1 && i <= 9)
+        this.electronsObj.push(new Electron(200));
+      else
+        this.electronsObj.push(new Electron(300));
     }
   }
   
   show() {
-    
     noStroke();
     //neutrons
    	for (let i = 0; i < this.neutrons; i++) {
@@ -65,19 +65,9 @@ class Atome {
     stroke(0);	
     
     // électrons
-    for (let i = this.electrons - 1; i >= 0; i--) {
-    	fill(0, 0, 255);
-      let x1 = this.electronsPos[i].x;
-      let y1 = this.electronsPos[i].y;
-      let x2 = width/2;
-      let y2 = height/2;
-      let r = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
-      this.rayons.push(r);
-      let x = width/2 + this.rayons[i] * cos(this.thetas[i]);
-      let y = height/2 + this.rayons[i] * sin(this.thetas[i]);
-      circle(x, y, 10);
-      line(x - 4, y, x + 4, y)
-    }
+    for (let i = 0; i < this.electrons; i++) {
+			this.electronsObj[i].show();
+    }    
   }
   
   checkBoundaries() {
@@ -98,19 +88,15 @@ class Atome {
   ionise(number, type) {
     if (type == 'cation') {
 			nbElectrons -= number;
-      this.tej = true;
+      this.electronsObj[this.electronsObj.length - 1].electronSortant = true;
     }
     else if (type == 'anion') {
-      
       nbElectrons += number;	
-      this.comeIn = true;
-			for (let i = 0; i < number; i++) {
-        this.thetas.push(0);
-        let pos = createVector(900, 900);
-        this.electronsPos.push(pos);
-    	}
+      for (let i = 0; i < number; i++) {
+      	this.electronsObj.push(new Electron(900));
+        this.electronsObj[this.electronsObj.length - 1].electronEntrant = true;
+      }
       this.electrons += number;
     }
-    ;
   }
 }

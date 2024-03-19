@@ -124,6 +124,11 @@ function draw() {
     
 		text(charge + `${chargeElec > 0 ? '+' : ''}`, 605, 665);
   }
+  noFill();
+  strokeWeight(0.1);
+  circle(width/2, height/2, 200)
+  circle(width/2, height/2, 400);
+  circle(width/2, height/2, 600);
 }
   
 function ionisation() {
