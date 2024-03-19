@@ -57,12 +57,15 @@ class Atome {
     }
     // protons
     for (let i = 0; i < this.protons; i++) {
-			fill(255, 0, 0, 150);
+			push();
+      fill(255, 0, 0, 150);
       stroke(255, 0, 0);
       circle(this.protonsPos[i].x, this.protonsPos[i].y, 15);
-      stroke(1);
+      strokeWeight(2);
+      stroke(0);
       line(this.protonsPos[i].x - 4, this.protonsPos[i].y, this.protonsPos[i].x + 4, this.protonsPos[i].y)
       line(this.protonsPos[i].x, this.protonsPos[i].y - 4, this.protonsPos[i].x, this.protonsPos[i].y + 4)
+      pop();
       /*for (let j = 0; j < i; j++) {
 				let d = dist(this.protonsPos[i].x, this.protonsPos[i].y, this.protonsPos[j].x, this.protonsPos[j].y)
         if (d < 10) {
