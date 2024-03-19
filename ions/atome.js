@@ -25,12 +25,20 @@ class Atome {
     
     // electrons
     for (let i = 0; i < this.protons; i++) {
-      if (i == 0 || i == 1)
-      	this.electronsObj.push(new Electron(100));
-      else if (i > 1 && i <= 9)
-        this.electronsObj.push(new Electron(200));
-      else
-        this.electronsObj.push(new Electron(300));
+      if (i == 0 || i == 1) {
+	      this.electronsObj.push(new Electron(100));
+        this.electronsObj[0].theta = 0;
+        if (i == 1)
+        	this.electronsObj[1].theta = PI;
+      }
+      else if (i > 1 && i <= 9) {
+	      this.electronsObj.push(new Electron(200));
+				this.electronsObj[i].theta = i * TWO_PI/8;
+      }
+      else {
+	      this.electronsObj.push(new Electron(300));
+        this.electronsObj[i].theta = i * TWO_PI/7;
+      }
     }
   }
   
