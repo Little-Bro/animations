@@ -3,7 +3,7 @@ class Atome {
 		this.x = x;
     this.y = y;
     this.r = 30;
-    this.theta = 0;
+    this.theta = random(0, TWO_PI);
     this.ex = 0;
     this.ey = 0;
   }
