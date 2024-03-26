@@ -103,7 +103,7 @@ function draw() {
 
 function mouseClicked() {
   // check if the cursor is within the canvas
-  if (mouseX < width && mouseY < height) {
+  if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
     sunPerception =!sunPerception;
     earth.isCentered = ! earth.isCentered;
     planet.history = [];
