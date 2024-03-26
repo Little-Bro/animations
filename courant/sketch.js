@@ -23,7 +23,7 @@ function draw() {
   textSize(24);
   text('Portion de fil de cuivre', width/2 - 125, 100);
   textSize(18);
-  text('Cliquer pour fermer le circuit', width/2 - 125, height - 30)
+  text('Cliquer pour ouvrir / fermer l\'interrupteur', width/2 - 150, height - 30)
   image(fil, 150, 150);
   //image(fleche, 600, 500);
   for (let a of atomes) {
