@@ -51,6 +51,7 @@ function draw() {
 }
 
 function mousePressed() {
-  courant = !courant;
-  console.log('x: ' +mouseX+ ', y: ' +mouseY);
+  if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+  	courant = !courant;
+  }
 }
