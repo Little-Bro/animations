@@ -21,15 +21,27 @@ function draw() {
   background(255);
   rect(0, 0, width, height);
   textSize(24);
+  textStyle(BOLD);
   text('Portion de fil de cuivre', width/2 - 125, 100);
   textSize(18);
-  text('Cliquer pour ouvrir / fermer l\'interrupteur', width/2 - 150, height - 30)
+  //textStyle(NORMAL);
+  text('Cliquer pour ouvrir / fermer l\'interrupteur', width/2 - 150, height - 30);
+  textStyle(NORMAL);
   image(fil, 150, 150);
-  //image(fleche, 600, 500);
   for (let a of atomes) {
 		a.show();
   }
-  //line(600, 510, 680, 565);
+  // legende
+  textSize(12);
+  image(noyau, 33, height - 160, 30, 30);
+  text(': noyau d\'un atome de cuivre', 70, height - 140);
+  push();
+  noStroke();
+  fill(0, 0, 255);
+  circle(50, height - 105, 10);
+  fill(0);
+  text(': électron "libre" le plus éloigné du noyau', 70, height - 100);
+  pop();
 }
 
 function mousePressed() {
