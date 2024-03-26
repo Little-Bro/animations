@@ -1,13 +1,8 @@
-// TODO
-/*
-	ajouter des éléments
-  avoir un noyeau plus joli
-*/
-
 let particule;
 let nature;
 let theta = 0;
 let nbElectrons;
+let peutIoniser;
 let ionisationBouton;
 let hydroBouton, sodiumBouton, chloreBouton;
 let element;  
@@ -15,6 +10,7 @@ let element;
 function setup() {
 	createCanvas(700, 700);
   element = 'hydrogene';
+  peutIoniser = true;
   particule = new Atome(1, 0);
   nbElectrons = particule.electrons;
   
@@ -33,8 +29,10 @@ function setup() {
   chloreBouton = createButton('Chlore 🏊‍♂️');
   chloreBouton.position(260, 160);
   
+  // TODO : mettre tout ça dans une fonction
   hydroBouton.mousePressed(() => {
 		element = 'hydrogene';
+    peutIoniser = true;
     for (const key in particule) {
 			delete particule[key];
     }
@@ -44,6 +42,7 @@ function setup() {
   
   sodiumBouton.mousePressed(() => {
 		element = 'sodium';
+    peutIoniser = true;
     for (const key in particule) {
 			delete particule[key];
     }
@@ -52,6 +51,7 @@ function setup() {
   });
   chloreBouton.mousePressed(() => {
 		element = 'chlore';
+    peutIoniser = true;
     for (const key in particule) {
 			delete particule[key];
     }
@@ -59,6 +59,7 @@ function setup() {
     nbElectrons = particule.electrons;
   });
 }
+
 function draw() {
   background(255);
   noFill();
@@ -133,12 +134,15 @@ function draw() {
 }
   
 function ionisation() {
-  if (element == 'sodium') {
+  if (element == 'sodium' && peutIoniser) {
 	  particule.ionise(1, 'cation');
+  	peutIoniser = false;
   }
-  else if (element == 'hydrogene') {
+  else if (element == 'hydrogene' && peutIoniser) {
   	particule.ionise(1, 'cation');
+  	peutIoniser = false;
   }
-   else if (element == 'chlore') 
+   else if (element == 'chlore' && peutIoniser) 
 		particule.ionise(1, 'anion');
+	  peutIoniser = false;
 }
