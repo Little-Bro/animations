@@ -23,8 +23,9 @@ function draw() {
   textSize(24);
   textStyle(BOLD);
   text('Portion de fil de cuivre', width/2 - 125, 100);
+  textStyle(NORMAL);
   textSize(18);
-  //textStyle(NORMAL);
+  text(`(circuit ${courant ? 'fermé' : 'ouvert'})`, width/2 - 50, 140)
   text('Cliquer pour ouvrir / fermer l\'interrupteur', width/2 - 150, height - 30);
   textStyle(NORMAL);
   image(fil, 150, 150);
@@ -41,6 +42,10 @@ function draw() {
   circle(50, height - 105, 10);
   fill(0);
   text(': électron "libre" le plus éloigné du noyau', 70, height - 100);
+  noFill();
+  strokeWeight(4);
+  //stroke(255, 0, 0);
+  circle(505, 447, 180);
   pop();
 }
 
