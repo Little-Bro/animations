@@ -16,7 +16,7 @@ function setup() {
   
   // bouton : ionisation
   ionisationBouton = createButton('Ionisation');
-  ionisationBouton.position(450, height - 25);
+  //ionisationBouton.position(450, height - 25);
   ionisationBouton.mousePressed(() => ionisation());
   
   // boutons : éléments

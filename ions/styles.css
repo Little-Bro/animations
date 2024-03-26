@@ -11,11 +11,14 @@ body {
 
   /* This centers our sketch vertically. */
   align-items: center;
+  
+  flex-direction: column;
 }
 
 /* CSS */
 button {
   margin-bottom: 30px;
+  margin-top: 10px;
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
