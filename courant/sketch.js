@@ -42,9 +42,10 @@ function draw() {
   circle(50, height - 105, 10);
   fill(0);
   text(': électron "libre" le plus éloigné du noyau', 70, height - 100);
+  pop();
+  push();
   noFill();
   strokeWeight(4);
-  //stroke(255, 0, 0);
   circle(505, 447, 180);
   pop();
 }
