@@ -18,7 +18,7 @@ function preload() {
 function setup() {
   createCanvas(750, 750);
   traceCheckBox = createCheckbox('Trajectoire visible', false);
-  consigne = createP('Cliquer sur l\'image pour changer de référentiel');
+  consigne = createP('Cliquez sur l\'image pour changer de référentiel');
   planetRelHistory = [];
   
   // colours

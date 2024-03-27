@@ -1,10 +1,10 @@
 let boucles = [];
 let generateur, lampe, interrupteur;
-let texte1;
+let consigne;
 
 function setup() {
-  createCanvas(700, 600);
-  
+  createCanvas(700, 550);
+  consigne = createP("Cliquez sur les lampes pour les dévisser.<br>Cliquez sur l'interrupteur pour l'\ouvrir ou le fermer.")
   generateur = new Generateur();
   interrupteur = new Interrupteur();
   // génération des boucles

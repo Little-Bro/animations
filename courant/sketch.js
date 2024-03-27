@@ -26,7 +26,7 @@ function draw() {
   textStyle(NORMAL);
   textSize(18);
   text(`(circuit ${courant ? 'fermé' : 'ouvert'})`, width/2 - 50, 140)
-  text('Cliquer pour ouvrir / fermer l\'interrupteur', width/2 - 150, height - 30);
+  text('Cliquez pour ouvrir / fermer l\'interrupteur', width/2 - 150, height - 30);
   textStyle(NORMAL);
   image(fil, 150, 150);
   for (let a of atomes) {
