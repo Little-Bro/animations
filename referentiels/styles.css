@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+input {
+	margin-top: 10px;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -11,4 +15,6 @@ body {
 
   /* This centers our sketch vertically. */
   align-items: center;
+  
+  flex-direction: column;
 }

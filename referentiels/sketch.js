@@ -7,6 +7,7 @@ let earth, planet, moon;
 let planetRelHistory;
 let traceCheckBox;
 let reference = 'héliocentrique';
+let consigne;
 
 let earthImg;
 
@@ -17,6 +18,7 @@ function preload() {
 function setup() {
   createCanvas(750, 750);
   traceCheckBox = createCheckbox('Trajectoire visible', false);
+  consigne = createP('Cliquer sur l\'image pour changer de référentiel');
   planetRelHistory = [];
   
   // colours
