@@ -29,34 +29,15 @@ function setup() {
   chloreBouton = createButton('Chlore 🏊‍♂️');
   chloreBouton.position(260, 160);
   
-  // TODO : mettre tout ça dans une fonction
   hydroBouton.mousePressed(() => {
-		element = 'hydrogene';
-    peutIoniser = true;
-    for (const key in particule) {
-			delete particule[key];
-    }
-    particule = new Atome(1, 0);
-    nbElectrons = particule.electrons;
+    makeAtom('hydrogene', 1, 0);
   });
   
   sodiumBouton.mousePressed(() => {
-		element = 'sodium';
-    peutIoniser = true;
-    for (const key in particule) {
-			delete particule[key];
-    }
-    particule = new Atome(11, 12);
-    nbElectrons = particule.electrons;
+    makeAtom('sodium', 11, 12);
   });
   chloreBouton.mousePressed(() => {
-		element = 'chlore';
-    peutIoniser = true;
-    for (const key in particule) {
-			delete particule[key];
-    }
-    particule = new Atome(17, 18); 
-    nbElectrons = particule.electrons;
+    makeAtom('chlore', 17, 18);
   });
 }
 
@@ -132,7 +113,18 @@ function draw() {
   circle(width/2, height/2, 600);
   //strokeWeight(1);
 }
-  
+
+function makeAtom(nom, protons, neutrons) {
+  console.log('test');
+  element = nom;
+  peutIoniser = true;
+  for (const key in particule) {
+    delete particule[key];
+  }
+  particule = new Atome(protons, neutrons);
+  nbElectrons = particule.electrons;
+}
+
 function ionisation() {
   if (element == 'sodium' && peutIoniser) {
 	  particule.ionise(1, 'cation');
