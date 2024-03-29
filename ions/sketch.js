@@ -115,7 +115,6 @@ function draw() {
 }
 
 function makeAtom(nom, protons, neutrons) {
-  console.log('test');
   element = nom;
   peutIoniser = true;
   for (const key in particule) {
