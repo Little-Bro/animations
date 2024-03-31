@@ -21,21 +21,21 @@ function draw() {
     sphere(40);
     pop();
     push();
-    translate(45, 45, 0);
+    translate(40, 45, 0);
     sphere(25);
     pop();
     push();
-    translate(-45, 45, 0);
+    translate(-40, 45, 0);
     sphere(25);
     translate(0, 0);
     pop();
   } else if (moleculeAffichee == 'Dihydrogène') {
 		push();
-    translate(-25, 0, 0);
+    translate(-20, 0, 0);
     sphere(25);
     pop();
     push();
-    translate(25, 0, 0);
+    translate(20, 0, 0);
     sphere(25);
     pop();
   } else if (moleculeAffichee == 'Dioxygène') {
