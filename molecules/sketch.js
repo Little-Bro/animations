@@ -1,4 +1,5 @@
 let moleculeAffichee;
+let formule;
 
 function setup() {
 	createCanvas(500, 500, WEBGL);
@@ -11,8 +12,8 @@ function draw() {
 	background(200);
   //rotateX(0.01 * frameCount);
   //rotateY(0.01 * frameCount);
-  //orbitControl();
 	orbitControl(5, 5, 5, {freeRotation: true});
+  orbitControl();
   if (moleculeAffichee == 'Eau') {
     noStroke();
     push();
@@ -26,6 +27,7 @@ function draw() {
     push();
     translate(-45, 45, 0);
     sphere(25);
+    translate(0, 0);
     pop();
   } else if (moleculeAffichee == 'Dihydrogène') {
 		push();
@@ -73,8 +75,4 @@ function draw() {
     sphere(25);
     pop();
   }
-}
-
-function test() {
-	console.log('ceci est un test');
 }
