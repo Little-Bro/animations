@@ -16,29 +16,7 @@ function setup() {
   
   // bouton : ionisation
   ionisationBouton = createButton('Ionisation');
-  //ionisationBouton.position(450, height - 25);
   ionisationBouton.mousePressed(() => ionisation());
-  
-  // boutons : éléments
-  hydroBouton = createButton('Hydrogène ⭐');
-  hydroBouton.position(260, 40);
-
-  sodiumBouton = createButton('Sodium 🧂');
-  sodiumBouton.position(260, 100);
-  
-  chloreBouton = createButton('Chlore 🏊‍♂️');
-  chloreBouton.position(260, 160);
-  
-  hydroBouton.mousePressed(() => {
-    makeAtom('hydrogene', 1, 0);
-  });
-  
-  sodiumBouton.mousePressed(() => {
-    makeAtom('sodium', 11, 12);
-  });
-  chloreBouton.mousePressed(() => {
-    makeAtom('chlore', 17, 18);
-  });
 }
 
 function draw() {

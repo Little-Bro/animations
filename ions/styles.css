@@ -15,10 +15,15 @@ body {
   flex-direction: column;
 }
 
-/* CSS */
+.boutons {
+	display: flex;
+  flex-direction: row;
+}
+
 button {
   margin-bottom: 30px;
   margin-top: 10px;
+  margin-right: 10px;
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
