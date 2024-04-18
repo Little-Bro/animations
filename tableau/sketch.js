@@ -75,10 +75,7 @@ function draw() {
   // rect(0, 0, width, height);
   background(255);
   push();
-
-  // if (orbitales.checked()) {
-  //   choix = 'orbitales';
-  // }
+  
   if (metaux.checked()) {
     choix = 'metaux';
   } else {
@@ -187,12 +184,29 @@ function draw() {
     pop();
   }
 
-  translate(21, 0);
+  // groupes 
+  textAlign(CENTER);
+  text('1', 44, 10);;
+  text('2', 80, 60);
+  for (let i = 0; i < 10; i++) {
+    text(i+3, 115 + i * 36, 160);
+  }
+  for (let i = 0; i < 5; i++) {
+    text(i+13, 476 + i * 36, 60);
+  }
+  text('18', 656, 10)
+  // périodes
+  for (let i = 0; i < 7; i++) {
+    text(i+1, 15, 45 + 50 * i);
+  }
+  // affichage du tableau
+  translate(21, 10);
   for (let e of elements) {
 		e.show();
   }
   pop();
 
+  // description de l'élément sélectionné
   if (elementChoisi) {
     push();
     textSize(24);
@@ -216,7 +230,7 @@ function draw() {
 function mouseClicked() {
   for (let e of elements) {
 		e.selectionne = false;
-    if ((mouseX -21 < e.x + 35 && mouseX -21 > e.x && mouseY < e.y + 50 && mouseY > e.y)) {
+    if ((mouseX -21 < e.x + 35 && mouseX -21 > e.x && mouseY - 10 < e.y + 50 && mouseY - 10> e.y)) {
 			e.selectionne = true;
       elementChoisi = {
         ...e
