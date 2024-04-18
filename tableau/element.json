@@ -1,0 +1,592 @@
+{
+  "1": [
+    "H",
+    "s",
+    "Hydrogène"
+  ],
+  "2": [
+    "He",
+    "s",
+    "Helium"
+  ],
+  "3": [
+    "Li",
+    "s",
+    "Lithium"
+  ],
+  "4": [
+    "Be",
+    "s",
+    "Béryllium"
+  ],
+  "5": [
+    "B",
+    "p",
+    "Bore"
+  ],
+  "6": [
+    "C",
+    "p",
+    "Carbone"
+  ],
+  "7": [
+    "N",
+    "p",
+    "Azote"
+  ],
+  "8": [
+    "O",
+    "p",
+    "Oxygène"
+  ],
+  "9": [
+    "F",
+    "p",
+    "Fluor"
+  ],
+  "10": [
+    "Ne",
+    "p",
+    "Néon"
+  ],
+  "11": [
+    "Na",
+    "s",
+    "Sodium"
+  ],
+  "12": [
+    "Mg",
+    "s",
+    "Magnésium"
+  ],
+  "13": [
+    "Al",
+    "p",
+    "Aluminium"
+  ],
+  "14": [
+    "Si",
+    "p",
+    "Silicium"
+  ],
+  "15": [
+    "P",
+    "p",
+    "Phosphore"
+  ],
+  "16": [
+    "S",
+    "p",
+    "Soufre"
+  ],
+  "17": [
+    "Cl",
+    "p",
+    "Chlore"
+  ],
+  "18": [
+    "Ar",
+    "p",
+    "Argon"
+  ],
+  "19": [
+    "K",
+    "s",
+    "Potassium"
+  ],
+  "20": [
+    "Ca",
+    "s",
+    "Calcium"
+  ],
+  "21": [
+    "Sc",
+    "d",
+    "Scandium"
+  ],
+  "22": [
+    "Ti",
+    "d",
+    "Titane"
+  ],
+  "23": [
+    "V",
+    "d",
+    "Vanadium"
+  ],
+  "24": [
+    "Cr",
+    "d",
+    "Chrome"
+  ],
+  "25": [
+    "Mn",
+    "d",
+    "Manganèse"
+  ],
+  "26": [
+    "Fe",
+    "d",
+    "Fer"
+  ],
+  "27": [
+    "Co",
+    "d",
+    "Cobalt"
+  ],
+  "28": [
+    "Ni",
+    "d",
+    "Nickel"
+  ],
+  "29": [
+    "Cu",
+    "d",
+    "Cuivre"
+  ],
+  "30": [
+    "Zn",
+    "d",
+    "Zinc"
+  ],
+  "31": [
+    "Ga",
+    "p",
+    "Gallium"
+  ],
+  "32": [
+    "Ge",
+    "p",
+    "Germanium"
+  ],
+  "33": [
+    "As",
+    "p",
+    "Arsenic"
+  ],
+  "34": [
+    "Se",
+    "p",
+    "Sélénium"
+  ],
+  "35": [
+    "Br",
+    "p",
+    "Brome"
+  ],
+  "36": [
+    "Kr",
+    "p",
+    "Krypton"
+  ],
+  "37": [
+    "Rb",
+    "s",
+    "Rubidium"
+  ],
+  "38": [
+    "Sr",
+    "s",
+    "Strontium"
+  ],
+  "39": [
+    "Y",
+    "d",
+    "Yttrium"
+  ],
+  "40": [
+    "Zr",
+    "d",
+    "Zirconium"
+  ],
+  "41": [
+    "Nb",
+    "d",
+    "Niobium"
+  ],
+  "42": [
+    "Mo",
+    "d",
+    "Molybdène"
+  ],
+  "43": [
+    "Tc",
+    "d",
+    "Technétium"
+  ],
+  "44": [
+    "Ru",
+    "d",
+    "Ruthénium"
+  ],
+  "45": [
+    "Rh",
+    "d",
+    "Rhodium"
+  ],
+  "46": [
+    "Pd",
+    "d",
+    "Palladium"
+  ],
+  "47": [
+    "Ag",
+    "d",
+    "Argent"
+  ],
+  "48": [
+    "Cd",
+    "d",
+    "Cadmium"
+  ],
+  "49": [
+    "In",
+    "p",
+    "Indium"
+  ],
+  "50": [
+    "Sn",
+    "p",
+    "Etain"
+  ],
+  "51": [
+    "Sb",
+    "p",
+    "Antimoine"
+  ],
+  "52": [
+    "Te",
+    "p",
+    "Tellure"
+  ],
+  "53": [
+    "I",
+    "p",
+    "Iode"
+  ],
+  "54": [
+    "Xe",
+    "p",
+    "Xenon"
+  ],
+  "55": [
+    "Cs",
+    "s",
+    "Césium"
+  ],
+  "56": [
+    "Ba",
+    "s",
+    "Baryum"
+  ],
+  "57": [
+    "La",
+    "f",
+    "Lanthane"
+  ],
+  "58": [
+    "Ce",
+    "f",
+    "Cérium"
+  ],
+  "59": [
+    "Pr",
+    "f",
+    "Praséodyme"
+  ],
+  "60": [
+    "Nd",
+    "f",
+    "Néodyme"
+  ],
+  "61": [
+    "Pm",
+    "f",
+    "Prométhéum"
+  ],
+  "62": [
+    "Sm",
+    "f",
+    "Samarium"
+  ],
+  "63": [
+    "Eu",
+    "f",
+    "Europium"
+  ],
+  "64": [
+    "Gd",
+    "f",
+    "Gadolinium"
+  ],
+  "65": [
+    "Tb",
+    "f",
+    "Terbium"
+  ],
+  "66": [
+    "Dy",
+    "f",
+    "Dysprosium"
+  ],
+  "67": [
+    "Ho",
+    "f",
+    "Holmium"
+  ],
+  "68": [
+    "Er",
+    "f",
+    "Erbium"
+  ],
+  "69": [
+    "Tm",
+    "f",
+    "Thulium"
+  ],
+  "70": [
+    "Yb",
+    "f",
+    "Ytterbium"
+  ],
+  "71": [
+    "Lu",
+    "f",
+    "Lutécium"
+  ],
+  "72": [
+    "Hf",
+    "d",
+    "Hafnium"
+  ],
+  "73": [
+    "Ta",
+    "d",
+    "Tantale"
+  ],
+  "74": [
+    "W",
+    "d",
+    "Tungstène"
+  ],
+  "75": [
+    "Re",
+    "d",
+    "Rhénium"
+  ],
+  "76": [
+    "Os",
+    "d",
+    "Osmium"
+  ],
+  "77": [
+    "Ir",
+    "d",
+    "Iridium"
+  ],
+  "78": [
+    "Pt",
+    "d",
+    "Platine"
+  ],
+  "79": [
+    "Au",
+    "d",
+    "Or"
+  ],
+  "80": [
+    "Hg",
+    "d",
+    "Mercure"
+  ],
+  "81": [
+    "Tl",
+    "p",
+    "Thallium"
+  ],
+  "82": [
+    "Pb",
+    "p",
+    "Plomb"
+  ],
+  "83": [
+    "Bi",
+    "p",
+    "Bismuth"
+  ],
+  "84": [
+    "Po",
+    "p",
+    "Polonium"
+  ],
+  "85": [
+    "At",
+    "p",
+    "Astate"
+  ],
+  "86": [
+    "Rn",
+    "p",
+    "Radon"
+  ],
+  "87": [
+    "Fr",
+    "s",
+    "Francium"
+  ],
+  "88": [
+    "Ra",
+    "s",
+    "Radium"
+  ],
+  "89": [
+    "Ac",
+    "f",
+    "Actinium"
+  ],
+  "90": [
+    "Th",
+    "f",
+    "Thorium"
+  ],
+  "91": [
+    "Pa",
+    "f",
+    "Protactinium"
+  ],
+  "92": [
+    "U",
+    "f",
+    "Uranium"
+  ],
+  "93": [
+    "Np",
+    "f",
+    "Neptunium"
+  ],
+  "94": [
+    "Pu",
+    "f",
+    "Plutionium"
+  ],
+  "95": [
+    "Am",
+    "f",
+    "Américium"
+  ],
+  "96": [
+    "Cm",
+    "f",
+    "Curium"
+  ],
+  "97": [
+    "Bk",
+    "f",
+    "Berkélium"
+  ],
+  "98": [
+    "Cf",
+    "f",
+    "Californium"
+  ],
+  "99": [
+    "Es",
+    "f",
+    "Einsteinium"
+  ],
+  "100": [
+    "Fm",
+    "f",
+    "Fermium"
+  ],
+  "101": [
+    "Md",
+    "f",
+    "Mendélévium"
+  ],
+  "102": [
+    "No",
+    "f",
+    "Nobélium"
+  ],
+  "103": [
+    "Lr",
+    "f",
+    "Lawrencium"
+  ],
+  "104": [
+    "Rf",
+    "d",
+    "Rutherfordium"
+  ],
+  "105": [
+    "Db",
+    "d",
+    "Dubnium"
+  ],
+  "106": [
+    "Sg",
+    "d",
+    "Seaborgium"
+  ],
+  "107": [
+    "Bh",
+    "d",
+    "Bohrium"
+  ],
+  "108": [
+    "Hs",
+    "d",
+    "Hassium"
+  ],
+  "109": [
+    "Mt",
+    "d",
+    "Meitnérium"
+  ],
+  "110": [
+    "Ds",
+    "d",
+    "Darmstadtium"
+  ],
+  "111": [
+    "Rg",
+    "d",
+    "Roentgenium"
+  ],
+  "112": [
+    "Cn",
+    "d",
+    "Copernicium"
+  ],
+  "113": [
+    "Nh",
+    "p",
+    "Nihonium"
+  ],
+  "114": [
+    "Fl",
+    "p",
+    "Flérovium"
+  ],
+  "115": [
+    "Mc",
+    "p",
+    "Moscovium"
+  ],
+  "116": [
+    "Lv",
+    "p",
+    "Livermorium"
+  ],
+  "117": [
+    "Ts",
+    "p",
+    "Tennessine"
+  ],
+  "118": [
+    "Og",
+    "p",
+    "Oganesson"
+  ]
+}

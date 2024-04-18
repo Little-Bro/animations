@@ -50,7 +50,7 @@ function draw() {
   pop();
 }
 
-function mousePressed() {
+function mouseClicked() {
   if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
   	courant = !courant;
   }
