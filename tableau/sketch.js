@@ -12,7 +12,6 @@ function preload() {
 function setup() {
 	createCanvas(700, 700);
   //choix = 'metaux';
-  orbitales = createCheckbox('orbitales');
   metaux = createCheckbox('métaux / non-métaux', true);
 
   elements = [];
@@ -77,11 +76,13 @@ function draw() {
   background(255);
   push();
 
-  if (orbitales.checked()) {
-    choix = 'orbitales';
-  }
+  // if (orbitales.checked()) {
+  //   choix = 'orbitales';
+  // }
   if (metaux.checked()) {
     choix = 'metaux';
+  } else {
+    choix = 'orbitales';
   }
 
   // flèches pour les lanthanides/actinides
