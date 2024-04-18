@@ -2,591 +2,709 @@
   "1": [
     "H",
     "s",
-    "Hydrogène"
+    "Hydrogène",
+    "non métal"
   ],
   "2": [
     "He",
     "s",
-    "Helium"
+    "Helium",
+    "gaz noble"
   ],
   "3": [
     "Li",
     "s",
-    "Lithium"
+    "Lithium",
+    "alcalin"
   ],
   "4": [
     "Be",
     "s",
-    "Béryllium"
+    "Béryllium",
+    "alcalino-terreux"
   ],
   "5": [
     "B",
     "p",
-    "Bore"
+    "Bore",
+    "métalloïde"
   ],
   "6": [
     "C",
     "p",
-    "Carbone"
+    "Carbone",
+    "non métal"
   ],
   "7": [
     "N",
     "p",
-    "Azote"
+    "Azote",
+    "non métal"
   ],
   "8": [
     "O",
     "p",
-    "Oxygène"
+    "Oxygène",
+    "non métal"
   ],
   "9": [
     "F",
     "p",
-    "Fluor"
+    "Fluor",
+    "halogène"
   ],
   "10": [
     "Ne",
     "p",
-    "Néon"
+    "Néon",
+    "gaz noble"
   ],
   "11": [
     "Na",
     "s",
-    "Sodium"
+    "Sodium",
+    "alcalin"
   ],
   "12": [
     "Mg",
     "s",
-    "Magnésium"
+    "Magnésium",
+    "alcalino-terreux"
   ],
   "13": [
     "Al",
     "p",
-    "Aluminium"
+    "Aluminium",
+    "métal pauvre"
   ],
   "14": [
     "Si",
     "p",
-    "Silicium"
+    "Silicium",
+    "métalloïde"
   ],
   "15": [
     "P",
     "p",
-    "Phosphore"
+    "Phosphore",
+    "non métal"
   ],
   "16": [
     "S",
     "p",
-    "Soufre"
+    "Soufre",
+    "non métal"
   ],
   "17": [
     "Cl",
     "p",
-    "Chlore"
+    "Chlore",
+    "halogène"
   ],
   "18": [
     "Ar",
     "p",
-    "Argon"
+    "Argon",
+    "gaz noble"
   ],
   "19": [
     "K",
     "s",
-    "Potassium"
+    "Potassium",
+    "alcalin"
   ],
   "20": [
     "Ca",
     "s",
-    "Calcium"
+    "Calcium",
+    "alcalino-terreux"
   ],
   "21": [
     "Sc",
     "d",
-    "Scandium"
+    "Scandium",
+    "métal de transition"
   ],
   "22": [
     "Ti",
     "d",
-    "Titane"
+    "Titane",
+    "métal de transition"
   ],
   "23": [
     "V",
     "d",
-    "Vanadium"
+    "Vanadium",
+    "métal de transition"
   ],
   "24": [
     "Cr",
     "d",
-    "Chrome"
+    "Chrome",
+    "métal de transition"
   ],
   "25": [
     "Mn",
     "d",
-    "Manganèse"
+    "Manganèse",
+    "métal de transition"
   ],
   "26": [
     "Fe",
     "d",
-    "Fer"
+    "Fer",
+    "métal de transition"
   ],
   "27": [
     "Co",
     "d",
-    "Cobalt"
+    "Cobalt",
+    "métal de transition"
   ],
   "28": [
     "Ni",
     "d",
-    "Nickel"
+    "Nickel",
+    "métal de transition"
   ],
   "29": [
     "Cu",
     "d",
-    "Cuivre"
+    "Cuivre",
+    "métal de transition"
   ],
   "30": [
     "Zn",
     "d",
-    "Zinc"
+    "Zinc",
+    "métal de transition"
   ],
   "31": [
     "Ga",
     "p",
-    "Gallium"
+    "Gallium",
+    "métal pauvre"
   ],
   "32": [
     "Ge",
     "p",
-    "Germanium"
+    "Germanium",
+    "métalloïde"
   ],
   "33": [
     "As",
     "p",
-    "Arsenic"
+    "Arsenic",
+    "métalloïde"
   ],
   "34": [
     "Se",
     "p",
-    "Sélénium"
+    "Sélénium",
+    "non métal"
   ],
   "35": [
     "Br",
     "p",
-    "Brome"
+    "Brome",
+    "halogène"
   ],
   "36": [
     "Kr",
     "p",
-    "Krypton"
+    "Krypton",
+    "gaz noble"
   ],
   "37": [
     "Rb",
     "s",
-    "Rubidium"
+    "Rubidium",
+    "alcalin"
   ],
   "38": [
     "Sr",
     "s",
-    "Strontium"
+    "Strontium",
+    "alcalino-terreux"
   ],
   "39": [
     "Y",
     "d",
-    "Yttrium"
+    "Yttrium",
+    "métal de transition"
   ],
   "40": [
     "Zr",
     "d",
-    "Zirconium"
+    "Zirconium",
+    "métal de transition"
   ],
   "41": [
     "Nb",
     "d",
-    "Niobium"
+    "Niobium",
+    "métal de transition"
   ],
   "42": [
     "Mo",
     "d",
-    "Molybdène"
+    "Molybdène",
+    "métal de transition"
   ],
   "43": [
     "Tc",
     "d",
-    "Technétium"
+    "Technétium",
+    "métal de transition"
   ],
   "44": [
     "Ru",
     "d",
-    "Ruthénium"
+    "Ruthénium",
+    "métal de transition"
   ],
   "45": [
     "Rh",
     "d",
-    "Rhodium"
+    "Rhodium",
+    "métal de transition"
   ],
   "46": [
     "Pd",
     "d",
-    "Palladium"
+    "Palladium",
+    "métal de transition"
   ],
   "47": [
     "Ag",
     "d",
-    "Argent"
+    "Argent",
+    "métal de transition"
   ],
   "48": [
     "Cd",
     "d",
-    "Cadmium"
+    "Cadmium",
+    "métal de transition"
   ],
   "49": [
     "In",
     "p",
-    "Indium"
+    "Indium",
+    "métal pauvre"
   ],
   "50": [
     "Sn",
     "p",
-    "Etain"
+    "Etain",
+    "métal pauvre"
   ],
   "51": [
     "Sb",
     "p",
-    "Antimoine"
+    "Antimoine",
+    "métalloïde"
   ],
   "52": [
     "Te",
     "p",
-    "Tellure"
+    "Tellure",
+    "métalloïde"
   ],
   "53": [
     "I",
     "p",
-    "Iode"
+    "Iode",
+    "halogène"
   ],
   "54": [
     "Xe",
     "p",
-    "Xenon"
+    "Xenon",
+    "gaz noble"
   ],
   "55": [
     "Cs",
     "s",
-    "Césium"
+    "Césium",
+    "alcalin"
   ],
   "56": [
     "Ba",
     "s",
-    "Baryum"
+    "Baryum",
+    "alcalino-terreux"
   ],
   "57": [
     "La",
     "f",
-    "Lanthane"
+    "Lanthane",
+    "lanthanide"
   ],
   "58": [
     "Ce",
     "f",
-    "Cérium"
+    "Cérium",
+    "lanthanide"
   ],
   "59": [
     "Pr",
     "f",
-    "Praséodyme"
+    "Praséodyme",
+    "lanthanide"
   ],
   "60": [
     "Nd",
     "f",
-    "Néodyme"
+    "Néodyme",
+    "lanthanide"
   ],
   "61": [
     "Pm",
     "f",
-    "Prométhéum"
+    "Prométhéum",
+    "lanthanide"
   ],
   "62": [
     "Sm",
     "f",
-    "Samarium"
+    "Samarium",
+    "lanthanide"
   ],
   "63": [
     "Eu",
     "f",
-    "Europium"
+    "Europium",
+    "lanthanide"
   ],
   "64": [
     "Gd",
     "f",
-    "Gadolinium"
+    "Gadolinium",
+    "lanthanide"
   ],
   "65": [
     "Tb",
     "f",
-    "Terbium"
+    "Terbium",
+    "lanthanide"
   ],
   "66": [
     "Dy",
     "f",
-    "Dysprosium"
+    "Dysprosium",
+    "lanthanide"
   ],
   "67": [
     "Ho",
     "f",
-    "Holmium"
+    "Holmium",
+    "lanthanide"
   ],
   "68": [
     "Er",
     "f",
-    "Erbium"
+    "Erbium",
+    "lanthanide"
   ],
   "69": [
     "Tm",
     "f",
-    "Thulium"
+    "Thulium",
+    "lanthanide"
   ],
   "70": [
     "Yb",
     "f",
-    "Ytterbium"
+    "Ytterbium",
+    "lanthanide"
   ],
   "71": [
     "Lu",
     "f",
-    "Lutécium"
+    "Lutécium",
+    "lanthanide"
   ],
   "72": [
     "Hf",
     "d",
-    "Hafnium"
+    "Hafnium",
+    "métal de transition"
   ],
   "73": [
     "Ta",
     "d",
-    "Tantale"
+    "Tantale",
+    "métal de transition"
   ],
   "74": [
     "W",
     "d",
-    "Tungstène"
+    "Tungstène",
+    "métal de transition"
   ],
   "75": [
     "Re",
     "d",
-    "Rhénium"
+    "Rhénium",
+    "métal de transition"
   ],
   "76": [
     "Os",
     "d",
-    "Osmium"
+    "Osmium",
+    "métal de transition"
   ],
   "77": [
     "Ir",
     "d",
-    "Iridium"
+    "Iridium",
+    "métal de transition"
   ],
   "78": [
     "Pt",
     "d",
-    "Platine"
+    "Platine",
+    "métal de transition"
   ],
   "79": [
     "Au",
     "d",
-    "Or"
+    "Or",
+    "métal de transition"
   ],
   "80": [
     "Hg",
     "d",
-    "Mercure"
+    "Mercure",
+    "métal de transition"
   ],
   "81": [
     "Tl",
     "p",
-    "Thallium"
+    "Thallium",
+    "métal pauvre"
   ],
   "82": [
     "Pb",
     "p",
-    "Plomb"
+    "Plomb",
+    "métal pauvre"
   ],
   "83": [
     "Bi",
     "p",
-    "Bismuth"
+    "Bismuth",
+    "métal pauvre"
   ],
   "84": [
     "Po",
     "p",
-    "Polonium"
+    "Polonium",
+    "métalloïde"
   ],
   "85": [
     "At",
     "p",
-    "Astate"
+    "Astate",
+    "halogène"
   ],
   "86": [
     "Rn",
     "p",
-    "Radon"
+    "Radon",
+    "gaz noble"
   ],
   "87": [
     "Fr",
     "s",
-    "Francium"
+    "Francium",
+    "alcalin"
   ],
   "88": [
     "Ra",
     "s",
-    "Radium"
+    "Radium",
+    "alcalino-terreux"
   ],
   "89": [
     "Ac",
     "f",
-    "Actinium"
+    "Actinium",
+    "actinide"
   ],
   "90": [
     "Th",
     "f",
-    "Thorium"
+    "Thorium",
+    "actinide"
   ],
   "91": [
     "Pa",
     "f",
-    "Protactinium"
+    "Protactinium",
+    "actinide"
   ],
   "92": [
     "U",
     "f",
-    "Uranium"
+    "Uranium",
+    "actinide"
   ],
   "93": [
     "Np",
     "f",
-    "Neptunium"
+    "Neptunium",
+    "actinide"
   ],
   "94": [
     "Pu",
     "f",
-    "Plutionium"
+    "Plutionium",
+    "actinide"
   ],
   "95": [
     "Am",
     "f",
-    "Américium"
+    "Américium",
+    "actinide"
   ],
   "96": [
     "Cm",
     "f",
-    "Curium"
+    "Curium",
+    "actinide"
   ],
   "97": [
     "Bk",
     "f",
-    "Berkélium"
+    "Berkélium",
+    "actinide"
   ],
   "98": [
     "Cf",
     "f",
-    "Californium"
+    "Californium",
+    "actinide"
   ],
   "99": [
     "Es",
     "f",
-    "Einsteinium"
+    "Einsteinium",
+    "actinide"
   ],
   "100": [
     "Fm",
     "f",
-    "Fermium"
+    "Fermium",
+    "actinide"
   ],
   "101": [
     "Md",
     "f",
-    "Mendélévium"
+    "Mendélévium",
+    "actinide"
   ],
   "102": [
     "No",
     "f",
-    "Nobélium"
+    "Nobélium",
+    "actinide"
   ],
   "103": [
     "Lr",
     "f",
-    "Lawrencium"
+    "Lawrencium",
+    "actinide"
   ],
   "104": [
     "Rf",
     "d",
-    "Rutherfordium"
+    "Rutherfordium",
+    "métal de transition"
   ],
   "105": [
     "Db",
     "d",
-    "Dubnium"
+    "Dubnium",
+    "métal de transition"
   ],
   "106": [
     "Sg",
     "d",
-    "Seaborgium"
+    "Seaborgium",
+    "métal de transition"
   ],
   "107": [
     "Bh",
     "d",
-    "Bohrium"
+    "Bohrium",
+    "métal de transition"
   ],
   "108": [
     "Hs",
     "d",
-    "Hassium"
+    "Hassium",
+    "métal de transition"
   ],
   "109": [
     "Mt",
     "d",
-    "Meitnérium"
+    "Meitnérium",
+    "métal de transition"
   ],
   "110": [
     "Ds",
     "d",
-    "Darmstadtium"
+    "Darmstadtium",
+    "métal de transition"
   ],
   "111": [
     "Rg",
     "d",
-    "Roentgenium"
+    "Roentgenium",
+    "métal de transition"
   ],
   "112": [
     "Cn",
     "d",
-    "Copernicium"
+    "Copernicium",
+    "métal de transition"
   ],
   "113": [
     "Nh",
     "p",
-    "Nihonium"
+    "Nihonium",
+    "métal pauvre"
   ],
   "114": [
     "Fl",
     "p",
-    "Flérovium"
+    "Flérovium",
+    "métal pauvre"
   ],
   "115": [
     "Mc",
     "p",
-    "Moscovium"
+    "Moscovium",
+    "métal pauvre"
   ],
   "116": [
     "Lv",
     "p",
-    "Livermorium"
+    "Livermorium",
+    "métal pauvre"
   ],
   "117": [
     "Ts",
     "p",
-    "Tennessine"
+    "Tennessine",
+    "halogène"
   ],
   "118": [
     "Og",
     "p",
-    "Oganesson"
+    "Oganesson",
+    "gaz noble"
   ]
 }

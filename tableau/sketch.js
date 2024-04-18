@@ -2,6 +2,8 @@ let elements;
 let tableau;
 let liste;
 let elementChoisi;
+let orbitales, metaux;
+let choix;
 
 function preload() {
   liste = loadJSON('./element.json');
@@ -9,6 +11,10 @@ function preload() {
 
 function setup() {
 	createCanvas(700, 700);
+  //choix = 'metaux';
+  orbitales = createCheckbox('orbitales');
+  metaux = createCheckbox('métaux / non-métaux', true);
+
   elements = [];
   // remplissage du tableau périodique
   //H
@@ -67,15 +73,117 @@ function setup() {
 }
 
 function draw() {
-  // rect(0, 0, width, height);
-  background(255);
+  rect(0, 0, width, height);
+  //background(255);
   push();
+
+  if (orbitales.checked()) {
+    choix = 'orbitales';
+  }
+  if (metaux.checked()) {
+    choix = 'metaux';
+  }
+
+
   // flèches pour les lanthanides/actinides
   line(122, 280, 122, 400);
   line(122, 400, 130, 400);
 
   line(109, 327, 109, 456);
   line(109, 456, 130, 456);
+
+  // légendes
+  textAlign(CENTER);
+  if (choix == 'orbitales') {
+    push();
+    translate(0, 10);
+    //s
+    fill(255, 226, 191);
+    rect(150, 5 , 15);
+    fill(0);
+    text('bloc s', 190, 17);
+    //p
+    fill(205, 255, 204);
+    rect(150, 25 , 15);
+    fill(0);
+    text('bloc p', 190, 37);
+    //d
+    fill(204, 246, 255);
+    rect(220, 5 , 15);
+    fill(0);
+    text('bloc d', 260, 17);
+    //f
+    fill(252, 189, 251);
+    rect(220, 25 , 15);
+    fill(0);
+    text('bloc f', 260, 37);
+    pop();
+  } else if (choix == 'metaux') {
+    push();
+    translate(-20, 0);
+    // métaux
+    textStyle(BOLD);
+    text('métaux', 170, 17);
+    textStyle(NORMAL);
+    textSize(12);
+    // alcalins
+    fill(97, 166, 244);
+    rect(150, 25 , 15);
+    fill(0);
+    text('alcalins', 190, 37);
+    // alcalino-terreux
+    fill(252, 207, 5);
+    rect(150, 45 , 15);
+    fill(0);
+    text('alcalino-terreux', 210, 57);
+    // métaux de transition
+    fill(162, 232, 242);
+    rect(150, 65 , 15);
+    fill(0);
+    text('métaux de transition', 224, 77);
+    // métaux pauvres
+    fill(247, 99, 76);
+    rect(150, 85 , 15);
+    fill(0);
+    text('métaux pauvres', 212, 97);
+    // lanthanides
+    fill(143, 114, 224);
+    rect(150, 105 , 15);
+    fill(0);
+    text('lanthanides', 202, 117);
+    // actinides
+    fill(224, 139, 188);
+    rect(150, 125 , 15);
+    fill(0);
+    text('actinides', 194, 137);
+    pop();
+    // métalloïdes
+    fill(188, 249, 127);
+    rect(458, 25 , 15);
+    fill(0);
+    text('métalloïdes', 510, 37);
+    // non métaux
+    textStyle(BOLD);
+    text('non métaux', 300, 17);
+    textStyle(NORMAL);
+    textSize(12);
+    // autres
+    fill(252, 170, 83);
+    rect(270, 25 , 15);
+    fill(0);
+    text('autres', 306, 37);
+    // halogènes
+    fill(245, 249, 127);
+    rect(270, 45 , 15);
+    fill(0);
+    text('halogènes', 318, 57);
+    // gaz nobles
+    fill(92, 188, 158);
+    rect(270, 65 , 15);
+    fill(0);
+    text('gaz nobles', 318, 77);
+    pop();
+  }
 
 
   translate(21, 0);
@@ -85,8 +193,10 @@ function draw() {
   pop();
 
   if (elementChoisi) {
+    push();
     textSize(24);
     text(elementChoisi.nom, 10, 550);
+    pop();
   }
 }
 
