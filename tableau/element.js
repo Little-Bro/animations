@@ -7,6 +7,7 @@ class Element {
     this.orbitale = args[1];
     this.nom = args[2];
     this.metal = args[3];
+    this.configuration = args[4];
     this.selectionne = false;
   }
   show() {

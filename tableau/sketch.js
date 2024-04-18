@@ -73,8 +73,8 @@ function setup() {
 }
 
 function draw() {
-  rect(0, 0, width, height);
-  //background(255);
+  // rect(0, 0, width, height);
+  background(255);
   push();
 
   if (orbitales.checked()) {
@@ -83,7 +83,6 @@ function draw() {
   if (metaux.checked()) {
     choix = 'metaux';
   }
-
 
   // flèches pour les lanthanides/actinides
   line(122, 280, 122, 400);
@@ -156,13 +155,14 @@ function draw() {
     rect(150, 125 , 15);
     fill(0);
     text('actinides', 194, 137);
-    pop();
     // métalloïdes
     fill(188, 249, 127);
     rect(458, 25 , 15);
     fill(0);
     text('métalloïdes', 510, 37);
     // non métaux
+    push();
+    translate(25, 0);
     textStyle(BOLD);
     text('non métaux', 300, 17);
     textStyle(NORMAL);
@@ -183,8 +183,8 @@ function draw() {
     fill(0);
     text('gaz nobles', 318, 77);
     pop();
+    pop();
   }
-
 
   translate(21, 0);
   for (let e of elements) {
@@ -195,7 +195,19 @@ function draw() {
   if (elementChoisi) {
     push();
     textSize(24);
-    text(elementChoisi.nom, 10, 550);
+    textStyle(BOLD);
+    text(elementChoisi.nom + ' (' + (elementChoisi.z+1) + ')', 5, 550);
+    textStyle(NORMAL);
+    text(elementChoisi.metal, 5, 580);
+    textSize(16);
+    text('masse atomique : ', 5, 620);
+    text('configuration électronique : ' + elementChoisi.configuration, 5, 640);
+    let etat = 'solide';
+    if (elementChoisi.symbole == 'Hg' || elementChoisi.symbole == 'Br')
+      etat = 'liquide'
+    if (['H', 'He', 'N', 'O', 'F', 'Ne', 'Cl', 'Ar', 'Kr', 'Xe', 'Rn'].includes(elementChoisi.symbole))
+      etat = 'gazeux';
+    text(etat + ' à 0°C et 101.3kPa', 5, 660);
     pop();
   }
 }
