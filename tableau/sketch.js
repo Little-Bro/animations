@@ -186,6 +186,7 @@ function draw() {
 
   // groupes 
   textAlign(CENTER);
+  fill(108, 144, 252);
   text('1', 44, 10);;
   text('2', 80, 60);
   for (let i = 0; i < 10; i++) {
@@ -196,6 +197,7 @@ function draw() {
   }
   text('18', 656, 10)
   // périodes
+  fill(252, 108, 108);
   for (let i = 0; i < 7; i++) {
     text(i+1, 15, 45 + 50 * i);
   }
