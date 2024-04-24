@@ -4,651 +4,744 @@
     "s",
     "Hydrogène",
     "non métal",
-    "1s1"
+    "1s1",
+    "2.2"
   ],
   "2": [
     "He",
     "s",
     "Helium",
     "gaz noble",
-    "1s2"
+    "1s2",
+    ""
   ],
   "3": [
     "Li",
     "s",
     "Lithium",
     "alcalin",
-    "[He] 2s1"
+    "[He] 2s1",
+    "0.98"
   ],
   "4": [
     "Be",
     "s",
     "Béryllium",
     "alcalino-terreux",
-    "[He] 2s2"
+    "[He] 2s2",
+    "1.57"
   ],
   "5": [
     "B",
     "p",
     "Bore",
     "métalloïde",
-    "[He] 2s2 2p1"
+    "[He] 2s2 2p1",
+    "2.04"
   ],
   "6": [
     "C",
     "p",
     "Carbone",
     "non métal",
-    "[He] 2s2 2p2"
+    "[He] 2s2 2p2",
+    "2.55"
   ],
   "7": [
     "N",
     "p",
     "Azote",
     "non métal",
-    "[He] 2s2 2p3"
+    "[He] 2s2 2p3",
+    "3.04"
   ],
   "8": [
     "O",
     "p",
     "Oxygène",
     "non métal",
-    "[He] 2s2 2p4"
+    "[He] 2s2 2p4",
+    "3.44"
   ],
   "9": [
     "F",
     "p",
     "Fluor",
     "halogène",
-    "[He] 2s2 2p5"
+    "[He] 2s2 2p5",
+    "3.98"
   ],
   "10": [
     "Ne",
     "p",
     "Néon",
     "gaz noble",
-    "[He] 2s2 2p6"
+    "[He] 2s2 2p6",
+    ""
   ],
   "11": [
     "Na",
     "s",
     "Sodium",
     "alcalin",
-    "[Ne] 3s1"
+    "[Ne] 3s1",
+    "0.93"
   ],
   "12": [
     "Mg",
     "s",
     "Magnésium",
     "alcalino-terreux",
-    "[Ne] 3s2"
+    "[Ne] 3s2",
+    "1.31"
   ],
   "13": [
     "Al",
     "p",
     "Aluminium",
     "métal pauvre",
-    "[Ne] 3s2 3p1"
+    "[Ne] 3s2 3p1",
+    "1.61"
   ],
   "14": [
     "Si",
     "p",
     "Silicium",
     "métalloïde",
-    "[Ne] 3s2 3p2"
+    "[Ne] 3s2 3p2",
+    "1.9"
   ],
   "15": [
     "P",
     "p",
     "Phosphore",
     "non métal",
-    "[Ne] 3s2 3p3"
+    "[Ne] 3s2 3p3",
+    "2.19"
   ],
   "16": [
     "S",
     "p",
     "Soufre",
     "non métal",
-    "[Ne] 3s2 3p4"
+    "[Ne] 3s2 3p4",
+    "2.58"
   ],
   "17": [
     "Cl",
     "p",
     "Chlore",
     "halogène",
-    "[Ne] 3s2 3p5"
+    "[Ne] 3s2 3p5",
+    "3.16"
   ],
   "18": [
     "Ar",
     "p",
     "Argon",
     "gaz noble",
-    "[Ne] 3s2 3p6"
+    "[Ne] 3s2 3p6",
+    ""
   ],
   "19": [
     "K",
     "s",
     "Potassium",
     "alcalin",
-    "[Ar] 4s1"
+    "[Ar] 4s1",
+    "0.82"
   ],
   "20": [
     "Ca",
     "s",
     "Calcium",
     "alcalino-terreux",
-    "[Ar] 4s2"
+    "[Ar] 4s2",
+    "1"
   ],
   "21": [
     "Sc",
     "d",
     "Scandium",
     "métal de transition",
-    "[Ar] 3d1 4s2"
+    "[Ar] 3d1 4s2",
+    "1.36"
   ],
   "22": [
     "Ti",
     "d",
     "Titane",
     "métal de transition",
-    "[Ar] 3d2 4s2"
+    "[Ar] 3d2 4s2",
+    "1.54"
   ],
   "23": [
     "V",
     "d",
     "Vanadium",
     "métal de transition",
-    "[Ar] 3d3 4s2"
+    "[Ar] 3d3 4s2",
+    "1.63"
   ],
   "24": [
     "Cr",
     "d",
     "Chrome",
     "métal de transition",
-    "[Ar] 3d5 4s1"
+    "[Ar] 3d5 4s1",
+    "1.66"
   ],
   "25": [
     "Mn",
     "d",
     "Manganèse",
     "métal de transition",
-    "[Ar] 3d5 4s2"
+    "[Ar] 3d5 4s2",
+    "1.55"
   ],
   "26": [
     "Fe",
     "d",
     "Fer",
     "métal de transition",
-    "[Ar] 3d6 4s2"
+    "[Ar] 3d6 4s2",
+    "1.83"
   ],
   "27": [
     "Co",
     "d",
     "Cobalt",
     "métal de transition",
-    "[Ar] 3d7 4s2"
+    "[Ar] 3d7 4s2",
+    "1.88"
   ],
   "28": [
     "Ni",
     "d",
     "Nickel",
     "métal de transition",
-    "[Ar] 3d8 4s2"
+    "[Ar] 3d8 4s2",
+    "1.91"
   ],
   "29": [
     "Cu",
     "d",
     "Cuivre",
     "métal de transition",
-    "[Ar] 3d10 4s1"
+    "[Ar] 3d10 4s1",
+    "1.9"
   ],
   "30": [
     "Zn",
     "d",
     "Zinc",
     "métal de transition",
-    "[Ar] 3d10 4s2"
+    "[Ar] 3d10 4s2",
+    "1.65"
   ],
   "31": [
     "Ga",
     "p",
     "Gallium",
     "métal pauvre",
-    "[Ar] 3d10 4s2 4p1"
+    "[Ar] 3d10 4s2 4p1",
+    "1.81"
   ],
   "32": [
     "Ge",
     "p",
     "Germanium",
     "métalloïde",
-    "[Ar] 3d10 4s2 4p2"
+    "[Ar] 3d10 4s2 4p2",
+    "2.01"
   ],
   "33": [
     "As",
     "p",
     "Arsenic",
     "métalloïde",
-    "[Ar] 3d10 4s2 4p3"
+    "[Ar] 3d10 4s2 4p3",
+    "2.18"
   ],
   "34": [
     "Se",
     "p",
     "Sélénium",
     "non métal",
-    "[Ar] 3d10 4s2 4p4"
+    "[Ar] 3d10 4s2 4p4",
+    "2.55"
   ],
   "35": [
     "Br",
     "p",
     "Brome",
     "halogène",
-    "[Ar] 3d10 4s2 4p5"
+    "[Ar] 3d10 4s2 4p5",
+    "2.96"
   ],
   "36": [
     "Kr",
     "p",
     "Krypton",
     "gaz noble",
-    "[Ar] 3d10 4s2 4p6"
+    "[Ar] 3d10 4s2 4p6",
+    ""
   ],
   "37": [
     "Rb",
     "s",
     "Rubidium",
     "alcalin",
-    "[Kr] 5s1"
+    "[Kr] 5s1",
+    "0.82"
   ],
   "38": [
     "Sr",
     "s",
     "Strontium",
     "alcalino-terreux",
-    "[Kr] 5s2"
+    "[Kr] 5s2",
+    "0.95"
   ],
   "39": [
     "Y",
     "d",
     "Yttrium",
     "métal de transition",
-    "[Kr] 4d1 5s2"
+    "[Kr] 4d1 5s2",
+    "1.22"
   ],
   "40": [
     "Zr",
     "d",
     "Zirconium",
     "métal de transition",
-    "[Kr] 4d2 5s2"
+    "[Kr] 4d2 5s2",
+    "1.33"
   ],
   "41": [
     "Nb",
     "d",
     "Niobium",
     "métal de transition",
-    "[Kr] 4d4 5s1"
+    "[Kr] 4d4 5s1",
+    "1.6"
   ],
   "42": [
     "Mo",
     "d",
     "Molybdène",
     "métal de transition",
-    "[Kr] 4d5 5s1"
+    "[Kr] 4d5 5s1",
+    "2.16"
   ],
   "43": [
     "Tc",
     "d",
     "Technétium",
     "métal de transition",
-    "[Kr] 4d5 5s2"
+    "[Kr] 4d5 5s2",
+    "1.9"
   ],
   "44": [
     "Ru",
     "d",
     "Ruthénium",
     "métal de transition",
-    "[Kr] 4d7 5s1"
+    "[Kr] 4d7 5s1",
+    "2.2"
   ],
   "45": [
     "Rh",
     "d",
     "Rhodium",
     "métal de transition",
-    "[Kr] 4d8 5s1"
+    "[Kr] 4d8 5s1",
+    "2.28"
   ],
   "46": [
     "Pd",
     "d",
     "Palladium",
     "métal de transition",
-    "[Kr] 4d10"
+    "[Kr] 4d10",
+    "2.2"
   ],
   "47": [
     "Ag",
     "d",
     "Argent",
     "métal de transition",
-    "[Kr] 4d10 5s1"
+    "[Kr] 4d10 5s1",
+    "1.93"
   ],
   "48": [
     "Cd",
     "d",
     "Cadmium",
     "métal de transition",
-    "[Kr] 4d10 5s2"
+    "[Kr] 4d10 5s2",
+    "1.69"
   ],
   "49": [
     "In",
     "p",
     "Indium",
     "métal pauvre",
-    "[Kr] 4d10 5s2 5p1"
+    "[Kr] 4d10 5s2 5p1",
+    "1.78"
   ],
   "50": [
     "Sn",
     "p",
     "Etain",
     "métal pauvre",
-    "[Kr] 4d10 5s2 5p2"
+    "[Kr] 4d10 5s2 5p2",
+    "1.96"
   ],
   "51": [
     "Sb",
     "p",
     "Antimoine",
     "métalloïde",
-    "[Kr] 4d10 5s2 5p3"
+    "[Kr] 4d10 5s2 5p3",
+    "2.05"
   ],
   "52": [
     "Te",
     "p",
     "Tellure",
     "métalloïde",
-    "[Kr] 4d10 5s2 5p4"
+    "[Kr] 4d10 5s2 5p4",
+    "2.1"
   ],
   "53": [
     "I",
     "p",
     "Iode",
     "halogène",
-    "[Kr] 4d10 5s2 5p5"
+    "[Kr] 4d10 5s2 5p5",
+    "2.66"
   ],
   "54": [
     "Xe",
     "p",
     "Xenon",
     "gaz noble",
-    "[Kr] 4d10 5s2 5p6"
+    "[Kr] 4d10 5s2 5p6",
+    "2.6"
   ],
   "55": [
     "Cs",
     "s",
     "Césium",
     "alcalin",
-    "[Xe] 6s1"
+    "[Xe] 6s1",
+    "0.79"
   ],
   "56": [
     "Ba",
     "s",
     "Baryum",
     "alcalino-terreux",
-    "[Xe] 6s2"
+    "[Xe] 6s2",
+    "0.89"
   ],
   "57": [
     "La",
     "f",
     "Lanthane",
     "lanthanide",
-    "[Xe] 5d1 6s2"
+    "[Xe] 5d1 6s2",
+    "1.1"
   ],
   "58": [
     "Ce",
     "f",
     "Cérium",
     "lanthanide",
-    "[Xe] 4f1 5d1 6s2"
+    "[Xe] 4f1 5d1 6s2",
+    "1.12"
   ],
   "59": [
     "Pr",
     "f",
     "Praséodyme",
     "lanthanide",
-    "[Xe] 4f3 6s2"
+    "[Xe] 4f3 6s2",
+    "1.13"
   ],
   "60": [
     "Nd",
     "f",
     "Néodyme",
     "lanthanide",
-    "[Xe] 4f4 6s2"
+    "[Xe] 4f4 6s2",
+    "1.14"
   ],
   "61": [
     "Pm",
     "f",
     "Prométhéum",
     "lanthanide",
-    "[Xe] 4f5 6s2"
+    "[Xe] 4f5 6s2",
+    "1.13"
   ],
   "62": [
     "Sm",
     "f",
     "Samarium",
     "lanthanide",
-    "[Xe] 4f6 6s2"
+    "[Xe] 4f6 6s2",
+    "1.17"
   ],
   "63": [
     "Eu",
     "f",
     "Europium",
     "lanthanide",
-    "[Xe] 6s2 4f7"
+    "[Xe] 6s2 4f7",
+    "1.2"
   ],
   "64": [
     "Gd",
     "f",
     "Gadolinium",
     "lanthanide",
-    "[Xe] 4f7 5d1 6s2"
+    "[Xe] 4f7 5d1 6s2",
+    "1.2"
   ],
   "65": [
     "Tb",
     "f",
     "Terbium",
     "lanthanide",
-    "[Xe] 4f9 6s2"
+    "[Xe] 4f9 6s2",
+    "1.1"
   ],
   "66": [
     "Dy",
     "f",
     "Dysprosium",
     "lanthanide",
-    "[Xe] 4f10 6s2"
+    "[Xe] 4f10 6s2",
+    "1.22"
   ],
   "67": [
     "Ho",
     "f",
     "Holmium",
     "lanthanide",
-    "[Xe] 4f11 6s2"
+    "[Xe] 4f11 6s2",
+    "1.23"
   ],
   "68": [
     "Er",
     "f",
     "Erbium",
     "lanthanide",
-    "[Xe] 4f12 6s2"
+    "[Xe] 4f12 6s2",
+    "1.24"
   ],
   "69": [
     "Tm",
     "f",
     "Thulium",
     "lanthanide",
-    "[Xe] 4f13 6s2"
+    "[Xe] 4f13 6s2",
+    "1.25"
   ],
   "70": [
     "Yb",
     "f",
     "Ytterbium",
     "lanthanide",
-    "[Xe] 4f14 6s2"
+    "[Xe] 4f14 6s2",
+    "1.1"
   ],
   "71": [
     "Lu",
     "f",
     "Lutécium",
     "lanthanide",
-    "[Xe] 4f14 5d1 6s2"
+    "[Xe] 4f14 5d1 6s2",
+    "1.27"
   ],
   "72": [
     "Hf",
     "d",
     "Hafnium",
     "métal de transition",
-    "[Xe] 4f14 5d2 6s2"
+    "[Xe] 4f14 5d2 6s2",
+    "1.3"
   ],
   "73": [
     "Ta",
     "d",
     "Tantale",
     "métal de transition",
-    "[Xe] 4f14 5d3 6s2"
+    "[Xe] 4f14 5d3 6s2",
+    "1.5"
   ],
   "74": [
     "W",
     "d",
     "Tungstène",
     "métal de transition",
-    "[Xe] 6s2 4f14 5d4"
+    "[Xe] 6s2 4f14 5d4",
+    "2.36"
   ],
   "75": [
     "Re",
     "d",
     "Rhénium",
     "métal de transition",
-    "[Xe] 4f14 5d5 6s2"
+    "[Xe] 4f14 5d5 6s2",
+    "1.9"
   ],
   "76": [
     "Os",
     "d",
     "Osmium",
     "métal de transition",
-    "[Xe] 4f14 5d6 6s2"
+    "[Xe] 4f14 5d6 6s2",
+    "2.2"
   ],
   "77": [
     "Ir",
     "d",
     "Iridium",
     "métal de transition",
-    "[Xe] 4f14 5d7 6s2"
+    "[Xe] 4f14 5d7 6s2",
+    "2.2"
   ],
   "78": [
     "Pt",
     "d",
     "Platine",
     "métal de transition",
-    "[Xe] 4f14 5d9 6s1"
+    "[Xe] 4f14 5d9 6s1",
+    "2.28"
   ],
   "79": [
     "Au",
     "d",
     "Or",
     "métal de transition",
-    "[Xe] 4f14 5d10 6s1"
+    "[Xe] 4f14 5d10 6s1",
+    "2.54"
   ],
   "80": [
     "Hg",
     "d",
     "Mercure",
     "métal de transition",
-    "[Xe] 4f14 5d10 6s2"
+    "[Xe] 4f14 5d10 6s2",
+    "2"
   ],
   "81": [
     "Tl",
     "p",
     "Thallium",
     "métal pauvre",
-    "[Xe] 4f14 5d10 6s2 6p1"
+    "[Xe] 4f14 5d10 6s2 6p1",
+    "2.04"
   ],
   "82": [
     "Pb",
     "p",
     "Plomb",
     "métal pauvre",
-    "[Xe] 4f14 5d10 6s2 6p2"
+    "[Xe] 4f14 5d10 6s2 6p2",
+    "2.33"
   ],
   "83": [
     "Bi",
     "p",
     "Bismuth",
     "métal pauvre",
-    "[Xe] 4f14 5d10 6s2 6p3"
+    "[Xe] 4f14 5d10 6s2 6p3",
+    "2.02"
   ],
   "84": [
     "Po",
     "p",
     "Polonium",
     "métalloïde",
-    "[Xe] 4f14 5d10 6s2 6p4"
+    "[Xe] 4f14 5d10 6s2 6p4",
+    "2"
   ],
   "85": [
     "At",
     "p",
     "Astate",
     "halogène",
-    "[Xe] 4f14 5d10 6s2 6p5"
+    "[Xe] 4f14 5d10 6s2 6p5",
+    "2.2"
   ],
   "86": [
     "Rn",
     "p",
     "Radon",
     "gaz noble",
-    "[Xe] 4f14 5d10 6s2 6p6"
+    "[Xe] 4f14 5d10 6s2 6p6",
+    ""
   ],
   "87": [
     "Fr",
     "s",
     "Francium",
     "alcalin",
-    "[Rn] 7s1"
+    "[Rn] 7s1",
+    "0.7"
   ],
   "88": [
     "Ra",
     "s",
     "Radium",
     "alcalino-terreux",
-    "[Rn] 7s2"
+    "[Rn] 7s2",
+    "0.89"
   ],
   "89": [
     "Ac",
     "f",
     "Actinium",
     "actinide",
-    "[Rn] 6d1 7s2"
+    "[Rn] 6d1 7s2",
+    "1.1"
   ],
   "90": [
     "Th",
     "f",
     "Thorium",
     "actinide",
-    "[Rn] 6d2 7s2"
+    "[Rn] 6d2 7s2",
+    "1.3"
   ],
   "91": [
     "Pa",
     "f",
     "Protactinium",
     "actinide",
-    "[Rn] 5f2 6d1 7s2"
+    "[Rn] 5f2 6d1 7s2",
+    "1.5"
   ],
   "92": [
     "U",
     "f",
     "Uranium",
     "actinide",
-    "[Rn] 7s2 5f3 6d1"
+    "[Rn] 7s2 5f3 6d1",
+    "1.38"
   ],
   "93": [
     "Np",
     "f",
     "Neptunium",
     "actinide",
-    "[Rn] 5f4 6d1 7s2"
+    "[Rn] 5f4 6d1 7s2",
+    "1.36"
   ],
   "94": [
     "Pu",
@@ -662,167 +755,191 @@
     "f",
     "Américium",
     "actinide",
-    "[Rn] 5f7 7s2"
+    "[Rn] 5f7 7s2",
+    "1.28"
   ],
   "96": [
     "Cm",
     "f",
     "Curium",
     "actinide",
-    "[Rn] 5f7 6d1 7s2"
+    "[Rn] 5f7 6d1 7s2",
+    "1.3"
   ],
   "97": [
     "Bk",
     "f",
     "Berkélium",
     "actinide",
-    "[Rn] 5f9 7s2"
+    "[Rn] 5f9 7s2",
+    "1.3"
   ],
   "98": [
     "Cf",
     "f",
     "Californium",
     "actinide",
-    "[Rn] 5f10 7s2"
+    "[Rn] 5f10 7s2",
+    "1.3"
   ],
   "99": [
     "Es",
     "f",
     "Einsteinium",
     "actinide",
-    "[Rn] 5f11 7s2"
+    "[Rn] 5f11 7s2",
+    "1.3"
   ],
   "100": [
     "Fm",
     "f",
     "Fermium",
     "actinide",
-    "[Rn] 5f12 7s2"
+    "[Rn] 5f12 7s2",
+    "1.3"
   ],
   "101": [
     "Md",
     "f",
     "Mendélévium",
     "actinide",
-    "[Rn] 5f13 7s2"
+    "[Rn] 5f13 7s2",
+    "1.3"
   ],
   "102": [
     "No",
     "f",
     "Nobélium",
     "actinide",
-    "[Rn] 5f14 7s2 ?"
+    "[Rn] 5f14 7s2 ?",
+    "1.3"
   ],
   "103": [
     "Lr",
     "f",
     "Lawrencium",
     "actinide",
-    "?"
+    "?",
+    "1.3"
   ],
   "104": [
     "Rf",
     "d",
     "Rutherfordium",
     "métal de transition",
-    "[Rn] 5f14 6d2 7s2"
+    "[Rn] 5f14 6d2 7s2",
+    ""
   ],
   "105": [
     "Db",
     "d",
     "Dubnium",
     "métal de transition",
-    "[Rn] 5f14 6d3 7s2"
+    "[Rn] 5f14 6d3 7s2",
+    ""
   ],
   "106": [
     "Sg",
     "d",
     "Seaborgium",
     "métal de transition",
-    "[Rn] 5f14 6d4 7s2"
+    "[Rn] 5f14 6d4 7s2",
+    ""
   ],
   "107": [
     "Bh",
     "d",
     "Bohrium",
     "métal de transition",
-    "[Rn] 5f14 6d5 7s2"
+    "[Rn] 5f14 6d5 7s2",
+    ""
   ],
   "108": [
     "Hs",
     "d",
     "Hassium",
     "métal de transition",
-    "[Rn] 5f14 6d6 7s2"
+    "[Rn] 5f14 6d6 7s2",
+    ""
   ],
   "109": [
     "Mt",
     "d",
     "Meitnérium",
     "métal de transition",
-    "[Rn] 5f14 6d7 7s2"
+    "[Rn] 5f14 6d7 7s2",
+    ""
   ],
   "110": [
     "Ds",
     "d",
     "Darmstadtium",
     "métal de transition",
-    "[Rn] 5f14 6d9 7s1"
+    "[Rn] 5f14 6d9 7s1",
+    ""
   ],
   "111": [
     "Rg",
     "d",
     "Roentgenium",
     "métal de transition",
-    " [Rn] 5f14 6d10 7s1"
+    " [Rn] 5f14 6d10 7s1",
+    ""
   ],
   "112": [
     "Cn",
     "d",
     "Copernicium",
     "métal de transition",
-    "[Rn] 5f14 6d10 7s2"
+    "[Rn] 5f14 6d10 7s2",
+    ""
   ],
   "113": [
     "Nh",
     "p",
     "Nihonium",
     "métal pauvre",
-    "[Rn] 5f14 6d10 7s2 7p1"
+    "[Rn] 5f14 6d10 7s2 7p1",
+    ""
   ],
   "114": [
     "Fl",
     "p",
     "Flérovium",
     "métal pauvre",
-    "[Rn] 5f14 6d10 7s2 7p2"
+    "[Rn] 5f14 6d10 7s2 7p2",
+    ""
   ],
   "115": [
     "Mc",
     "p",
     "Moscovium",
     "métal pauvre",
-    "[Rn] 5f14 6d10 7s2 7p3"
+    "[Rn] 5f14 6d10 7s2 7p3",
+    ""
   ],
   "116": [
     "Lv",
     "p",
     "Livermorium",
     "métal pauvre",
-    "[Rn] 5f14 6d10 7s2 7p4"
+    "[Rn] 5f14 6d10 7s2 7p4",
+    ""
   ],
   "117": [
     "Ts",
     "p",
     "Tennessine",
     "halogène",
-    "Rn] 5f14 6d10 7s2 7p5"
+    "Rn] 5f14 6d10 7s2 7p5",
+    ""
   ],
   "118": [
     "Og",
     "p",
     "Oganesson",
     "gaz noble",
-    "[Rn] 5f14 6d10 7s2 7p6"
+    "[Rn] 5f14 6d10 7s2 7p6",
+    ""
   ]
 }
