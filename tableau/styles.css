@@ -16,13 +16,15 @@ main {
 #mainContainer {
   display: flex;
   flex-direction: row;
-
-  /* margin: 0;
-  justify-content: center;
-  align-items: center; */
 }
 
 #inputContainer {
   display: flex;
   flex-direction: column;
+}
+
+#canvasContainer {
+  canvas {
+    margin-left: 120px;
+  }
 }
