@@ -4,35 +4,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  /* This centers our sketch horizontally. */
-  justify-content: center;
-  /* This centers our sketch vertically. */
-  align-items: center;
-}
-
-span {
-  font-size: 18px;
-}
-
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.headContainer {
-  display: flex;
-  flex-direction: row;
-}
-
 main {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  h1 {
-    display: flex;
-    justify-content: center;
-  }
+#mainContainer {
+  display: flex;
+  flex-direction: row;
+
+  /* margin: 0;
+  justify-content: center;
+  align-items: center; */
+}
+
+#inputContainer {
+  display: flex;
+  flex-direction: column;
 }

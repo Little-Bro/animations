@@ -8,7 +8,9 @@ class Element {
     this.nom = args[2];
     this.metal = args[3];
     this.configuration = args[4];
+    this.electronegativite = args[5];
     this.selectionne = false;
+    this.montreElectroNeg = false;
   }
   show() {
     push();
@@ -61,6 +63,7 @@ class Element {
 			//stroke('red');
       fill('yellow');
     }
+
     rect(this.x, this.y, 35, 50);
     fill('black');
     textStyle(NORMAL);
@@ -71,6 +74,16 @@ class Element {
     let xNumAtom = this.z.toString().length == 1 ? this.x + 12 : this.x + 7;
       
     text(this.z + 1, this.x + 17, this.y + 45);
+    if (this.montreElectroNeg) {
+      textSize(10);
+
+      fill(255, 0, 0);
+      text(this.electronegativite, this.x + 17, this.y + 10);
+      let rectY = map(this.electronegativite, 0, 4, 0, 50);
+      noStroke();
+      fill(255, 0, 0, 160);
+      rect(this.x, this.y + 50 - rectY, 35, rectY);
+    }
     pop();
   }
 }

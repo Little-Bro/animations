@@ -2,7 +2,7 @@ let elements;
 let tableau;
 let liste;
 let elementChoisi;
-let orbitales, metaux;
+let metaux, electronegativite;
 let choix;
 
 function preload() {
@@ -10,9 +10,13 @@ function preload() {
 }
 
 function setup() {
-	createCanvas(700, 700);
+	let cnv = createCanvas(700, 700);
+  cnv.parent('canvasContainer');
   //choix = 'metaux';
   metaux = createCheckbox('métaux / non-métaux', true);
+  electronegativite = createCheckbox('électronégativité');
+  metaux.parent('inputContainer');
+  electronegativite.parent('inputContainer');
 
   elements = [];
   // remplissage du tableau périodique
@@ -80,6 +84,16 @@ function draw() {
     choix = 'metaux';
   } else {
     choix = 'orbitales';
+  }
+
+  if (electronegativite.checked()) {
+    for (let e of elements) {
+      e.montreElectroNeg = true;
+    }
+  } else {
+    for (let e of elements) {
+      e.montreElectroNeg = false;
+    }
   }
 
   // flèches pour les lanthanides/actinides
