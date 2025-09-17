@@ -231,7 +231,7 @@ function draw() {
     textStyle(NORMAL);
     text(elementChoisi.metal, 5, 580);
     textSize(16);
-    text('masse atomique : ', 5, 620);
+    text('masse atomique : ' + (elementChoisi.masseAtomique != "" ? elementChoisi.masseAtomique + 'g/mol' : '-'), 5, 620);
     text('configuration électronique : ' + elementChoisi.configuration, 5, 640);
     let etat = 'solide';
     if (elementChoisi.symbole == 'Hg' || elementChoisi.symbole == 'Br')

@@ -9,6 +9,7 @@ class Element {
     this.metal = args[3];
     this.configuration = args[4];
     this.electronegativite = args[5];
+    this.masseAtomique = args[6];
     this.selectionne = false;
     this.montreElectroNeg = false;
   }
