@@ -13,7 +13,7 @@ function setup() {
 	let cnv = createCanvas(700, 700);
   cnv.parent('canvasContainer');
   //choix = 'metaux';
-  metaux = createCheckbox('métaux / non-métaux', true);
+  metaux = createCheckbox('sous-couches électroniques', false);
   electronegativite = createCheckbox('électronégativité');
   metaux.parent('inputContainer');
   electronegativite.parent('inputContainer');
@@ -81,9 +81,9 @@ function draw() {
   push();
   
   if (metaux.checked()) {
-    choix = 'metaux';
-  } else {
     choix = 'orbitales';
+  } else {
+    choix = 'metaux';
   }
 
   if (electronegativite.checked()) {
