@@ -5,6 +5,8 @@ let elementChoisi;
 let metaux, electronegativite;
 let choix;
 
+let t;
+
 function preload() {
   liste = loadJSON('./element.json');
 }
@@ -72,12 +74,13 @@ function setup() {
   for (let i = 103; i < 118; i++) {
     elements.push(new Element(i * 36 - 3595, 305, i, Object.values(liste)[i]))
   }
-
+  t = 0;
 }
 
 function draw() {
   // rect(0, 0, width, height);
   background(255);
+  t += 1/1000;
   push();
   
   if (metaux.checked()) {
@@ -239,6 +242,7 @@ function draw() {
     if (['H', 'He', 'N', 'O', 'F', 'Ne', 'Cl', 'Ar', 'Kr', 'Xe', 'Rn'].includes(elementChoisi.symbole))
       etat = 'gazeux';
     text(etat + ' à 0°C et 101.3kPa', 5, 660);
+    drawAtom(elementChoisi.z+1);
     pop();
   }
 }
@@ -253,4 +257,89 @@ function mouseClicked() {
       };
     }
   }
+}
+
+function drawAtom(Z) {
+  push();
+  if (Z <= 18) {
+    fill('red');
+    translate(width/2 + 250, height/2 + 250)
+    circle(0, 0, 10);
+    noFill();
+    strokeWeight(2);
+    textSize(12);
+    // 1
+    fill('red');
+    text('1', -3, -28);
+    noFill();
+    //1s
+    stroke(255, 226, 191);
+    circle(0, 0, 50);
+    if (Z > 2) {
+      //2
+      noStroke();
+      fill('red');
+      text('2', -3, -54);
+      noFill();
+      //2s
+      stroke(255, 226, 191);
+      circle(0, 0, 90);
+      if (Z > 4) {
+        //2p
+        stroke(205, 255, 204);
+        circle(0, 0, 100);  
+        if (Z > 10) {
+          // 3
+          noStroke();
+          fill('red');
+          text('3', -3, -80);
+          noFill();
+          //3s
+          stroke(255, 226, 191);
+          circle(0, 0, 140);
+          if (Z > 12) {
+            //3p
+            stroke(205, 255, 204);
+            circle(0, 0, 150);             
+          }
+        } 
+      }  
+    }
+   
+    // electrons
+    let R = 25;
+    let baseTheta = 0;
+    for (let i = 0; i < Z; i++) {
+      if (i == 0 || i == 1) {
+        R = 25;
+        baseTheta += PI;
+      } else if (i == 2 || i == 3) {
+        if (i == 2)
+          baseTheta += PI / 2;
+        R = 45;
+        baseTheta += PI;
+      } else if (i > 3 && i < 10) {
+        if (i == 4)
+          baseTheta += PI / 4;
+        R = 50;
+        baseTheta += PI/3;
+      } else if (i == 10 || i == 11) {
+        if (i == 10)
+          baseTheta += PI / 2;
+        R = 70;
+        baseTheta += PI;
+      } else if (i > 11 && i < 18) {
+        if (i == 12)
+          baseTheta += PI / 4;
+        R = 75;
+        baseTheta += PI/3;
+      }
+      let x = R * cos(baseTheta + t);
+      let y = R * sin(baseTheta + t);
+      fill('blue');
+      noStroke();
+      circle(x, y, 5);
+    } 
+  }
+  pop();
 }
