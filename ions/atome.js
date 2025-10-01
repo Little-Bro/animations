@@ -31,13 +31,21 @@ class Atome {
         if (i == 1)
         	this.electronsObj[1].theta = PI;
       }
-      else if (i > 1 && i <= 9) {
+      else if (i == 2 || i == 3) {
 	      this.electronsObj.push(new Electron(200));
-				this.electronsObj[i].theta = i * TWO_PI/8;
+				this.electronsObj[i].theta = PI / 4 + i * TWO_PI / 2;
+      }
+      else if (i > 3 && i < 10) {
+        this.electronsObj.push(new Electron(210));
+        this.electronsObj[i].theta =  PI / 8 + i * TWO_PI/ 6;
+      }
+      else if (i == 10 || i == 11) {
+        this.electronsObj.push(new Electron(300));
+        this.electronsObj[i].theta = i * TWO_PI / 2;
       }
       else {
-	      this.electronsObj.push(new Electron(300));
-        this.electronsObj[i].theta = i * TWO_PI/7;
+	      this.electronsObj.push(new Electron(310));
+        this.electronsObj[i].theta = TWO_PI/4 + i * TWO_PI/5;
       }
     }
   }

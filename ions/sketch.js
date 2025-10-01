@@ -29,8 +29,6 @@ function draw() {
 		particule.thetas[i] += PI/200;
   }
   
-  particule.show();
-  particule.checkBoundaries();
   // TEXTE EN HAUT A GAUCHE
  	fill(0);
   textSize(24);
@@ -43,7 +41,7 @@ function draw() {
   fill(0, 0, 255);
   text(`${nbElectrons} ${nbElectrons > 1 ? 'électrons' : 'électron'}`, 205, 30);
   fill(0);
-  text('je suis un', 340, 30);
+  text('je suis un ', 340, 30);
   natureTexte = parseInt(particule.protons) == parseInt(nbElectrons) ? 'atome' : 'ion';
 	textStyle(BOLD);
   text(natureTexte, 445, 30);
@@ -85,11 +83,26 @@ function draw() {
 		text(charge + `${chargeElec > 0 ? '+' : ''}`, 605, 665);
   }
   noFill();
-  strokeWeight(0.1);
-  circle(width/2, height/2, 200)
+  push();
+  strokeWeight(1);
+  stroke(224, 62, 221, 100);
+  text('1s', width/2 + 25, height/2 - 110);
+  circle(width/2, height/2, 200);
+  stroke(252, 102, 10, 100);
+  text('2s', width/2 + 100, height/2 - 150);
+  text('2p', width/2 + 100, height/2 - 190);
   circle(width/2, height/2, 400);
+  circle(width/2, height/2, 420);
+  stroke(73, 224, 62, 100);
+  text('3s', width/2 + 190, height/2 - 200);
+  text('3p', width/2 + 190, height/2 - 250);
   circle(width/2, height/2, 600);
-  //strokeWeight(1);
+  circle(width/2, height/2, 620);
+  pop();
+
+
+  particule.show();
+  particule.checkBoundaries();
 }
 
 function makeAtom(nom, protons, neutrons) {

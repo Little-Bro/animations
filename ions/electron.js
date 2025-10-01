@@ -7,7 +7,7 @@ class Electron {
   }
   show() {
     push();
-    this.theta += PI/200;
+    this.theta += PI/2000;
     let x = width/2 + this.r * cos(this.theta);
     let y = height/2 + this.r * sin(this.theta);
     if (this.electronSortant)
