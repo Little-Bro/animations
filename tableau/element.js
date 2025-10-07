@@ -17,11 +17,11 @@ class Element {
     push();
     if (choix == 'orbitales') {
       if (this.orbitale == 's') {
-        fill(255, 226, 191);
+        fill(255, 51, 31);
       } else if (this.orbitale == 'p') {
-        fill(205, 255, 204);
+        fill(101, 126, 212);
       } else if (this.orbitale == 'd') {
-        fill(204, 246, 255);
+        fill(38, 166, 121);
       } else if (this.orbitale == 'f') {
         fill(252, 189, 251);
       }

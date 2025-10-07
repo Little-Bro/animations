@@ -78,7 +78,6 @@ function setup() {
 }
 
 function draw() {
-  // rect(0, 0, width, height);
   background(255);
   t += 1/1000;
   push();
@@ -112,17 +111,17 @@ function draw() {
     push();
     translate(0, 10);
     //s
-    fill(255, 226, 191);
+    fill(255, 51, 31);
     rect(150, 5 , 15);
     fill(0);
     text('bloc s', 190, 17);
     //p
-    fill(205, 255, 204);
+    fill(101, 126, 212);
     rect(150, 25 , 15);
     fill(0);
     text('bloc p', 190, 37);
     //d
-    fill(204, 246, 255);
+    fill(38, 166, 121);
     rect(220, 5 , 15);
     fill(0);
     text('bloc d', 260, 17);
@@ -261,46 +260,66 @@ function mouseClicked() {
 
 function drawAtom(Z) {
   push();
-  if (Z <= 18) {
+  if (Z <= 36 && Z != 24 && Z != 29) {
+    // NOYAU
     fill('red');
     translate(width/2 + 250, height/2 + 250)
     circle(0, 0, 10);
     noFill();
-    strokeWeight(2);
-    textSize(12);
+    textSize(14);
     // 1
     fill('red');
-    text('1', -3, -28);
+    text('1', 13, -21);
     noFill();
     //1s
-    stroke(255, 226, 191);
+    stroke(255, 51, 31);
     circle(0, 0, 50);
     if (Z > 2) {
       //2
       noStroke();
       fill('red');
-      text('2', -3, -54);
+      text('2', 32, -40);
       noFill();
       //2s
-      stroke(255, 226, 191);
+      stroke(255, 51, 31);
       circle(0, 0, 90);
       if (Z > 4) {
         //2p
-        stroke(205, 255, 204);
+        stroke(101, 126, 212);
         circle(0, 0, 100);  
         if (Z > 10) {
           // 3
           noStroke();
           fill('red');
-          text('3', -3, -80);
+          text('3', 52, -60);
           noFill();
           //3s
-          stroke(255, 226, 191);
+          stroke(255, 51, 31);
           circle(0, 0, 140);
           if (Z > 12) {
             //3p
-            stroke(205, 255, 204);
-            circle(0, 0, 150);             
+            stroke(101, 126, 212);
+            circle(0, 0, 150);  
+            if (Z > 18) {
+              // 4
+              noStroke();
+              fill('red');
+              text('4', 72, -80);
+              noFill();
+              //4s
+              stroke(255, 51, 31);
+              circle(0, 0, 190);
+              if (Z > 20) {
+                //3d
+                stroke(38, 166, 121);
+                circle(0, 0, 160);
+              }
+              if (Z > 30) {
+                //4p
+                stroke(101, 126, 212);
+                circle(0, 0, 200);  
+              }              
+            }           
           }
         } 
       }  
@@ -332,6 +351,21 @@ function drawAtom(Z) {
         if (i == 12)
           baseTheta += PI / 4;
         R = 75;
+        baseTheta += PI/3;
+      } else if (i == 18 || i == 19) {
+        if (i == 18)
+          baseTheta += PI/6;
+        R = 95;
+        baseTheta += PI;
+      } else if (i > 19 && i < 30) {
+        if (i == 19)
+          baseTheta += PI/4;
+        R = 80;
+        baseTheta += PI/5;
+      } else if (i >= 30 && i < 36) {
+        if (i == 30)
+          baseTheta += PI/5;
+        R = 100;
         baseTheta += PI/3;
       }
       let x = R * cos(baseTheta + t);
