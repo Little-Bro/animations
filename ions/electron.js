@@ -12,7 +12,7 @@ class Electron {
     let y = height/2 + this.r * sin(this.theta);
     if (this.electronSortant)
       this.r += 5;
-    if (this.electronEntrant && this.r >= 305)
+    if (this.electronEntrant && this.r >= 315)
       this.r -= 5;
     fill(0, 0, 255);
 		circle(x, y, 12);
