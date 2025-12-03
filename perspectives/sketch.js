@@ -62,8 +62,9 @@ function drawRel(col) {
     chosen = balls[1];
   for (let b of balls) {
     if (b.col != col) {
-      if (b.limit < 80) {
+      if (b.limit < 600) {
         b.trace.push(createVector(b.x - chosen.x, b.y - chosen.y));
+        b.limit++;
       }
       for (let pos of b.trace) {
         push();
@@ -77,7 +78,6 @@ function drawRel(col) {
 
 function keyReleased() {
   if (key === 't') {
-  console.log('CLICK');
     if (refRouge.checked()) {
       ref = "red";
     }
