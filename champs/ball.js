@@ -1,13 +1,15 @@
 class Ball {
-  constructor(type, x, y) {
+  constructor(type, charge, x, y) {
     this.type = type;
+    this.charge = charge;
     this.pos = createVector(x, y);
     this.vel = createVector(0, 0);
     this.acc = createVector(1, 0);
     this.showArrows = true;
+    this.hasCollided = false;
     this.size = type == 'attractor' ? 20 : 10;
     this.d;
-    this.field = new Arrow(this.pos.x, this.pos.y);
+    //this.field = new Arrow(this.pos.x, this.pos.y);
     this.force = new Arrow(this.pos.x, this.pos.y, true);
     // angling the acceleration vector towards the attractor
     this.angle = 0;
@@ -23,12 +25,15 @@ class Ball {
   show() {
     push();
     noStroke();
-    if (this.type == 'attractor') 
+    if (this.charge == 'minus') 
       fill(136, 252, 240);
     else {
       fill(232, 85, 85);
     }
     circle(this.pos.x, this.pos.y, this.size);
+    let signText = this.charge == 'plus' ? '+' : '-';
+    fill(0);
+    text(signText, this.pos.x - 1, this.pos.y);
     pop();
   }
   moveTowards(x, y) {
@@ -38,11 +43,11 @@ class Ball {
     // accelerating the attracted particle
     // until it hits the attractor
     if (d > 15) {
-      this.acc.setMag(5/(d));
+      this.acc.setMag(5/d);
       this.vel.add(this.acc);
       this.pos.add(this.vel);    
     } else {
-      this.showArrows = false;
+      this.hasCollided = true;
     }
   }
 }

@@ -1,6 +1,7 @@
 let arrows;
 let columns, space;
 let hasAttractor;
+let attractorNegative, attractedNegative;
 let attractor, attracted;
 let targetX, targetY;
 let seeIsoLines;
@@ -16,6 +17,8 @@ function setup() {
   arrows = make2DArray(columns, columns);
   hasAttractor = true;
   flyAway = false;
+  attractorNegative = true;
+  attractedNegative = false;
   attracted = [];
   seeIsoLines = createCheckbox('Voir des lignes de niveau de distance', false);
   for (let i = 0; i < columns; i++) {
@@ -35,27 +38,37 @@ function draw() {
       arrows[i][j].show(targetX, targetY);
     }
   }
-  for (let a of attracted) {
-    a.show();
-    a.moveTowards(attractor.pos.x, attractor.pos.y);
-    if (a.showArrows) {
-      a.field.show(attractor.pos.x, attractor.pos.y, a.pos.x, a.pos.y);
-      a.force.show(attractor.pos.x, attractor.pos.y, a.pos.x, a.pos.y);
-      a.field.pointingAway = flyAway;   
-      a.force.pointingAway = flyAway;      
+  flyAway = attractorNegative == attractedNegative;
+  for (let i = 0; i < attracted.length; i++) {
+    attracted[i].show();
+    attracted[i].moveTowards(attractor.pos.x, attractor.pos.y);
+    if (attracted[i].showArrows) {
+      attracted[i].force.show(attractor.pos.x, attractor.pos.y, attracted[i].pos.x, attracted[i].pos.y);
+      attracted[i].force.pointingAway = flyAway;      
+    }
+    if (attracted[i].hasCollided) {
+      attracted.splice(attracted[i], 1);
     }
   }
-
-  if (hasAttractor) 
-    ballOnMouse('blue');
-  else {
-    ballOnMouse('red');
-  }
+    
+    if (!hasAttractor) {
+      forceOnMouse.pointingAway = flyAway;
+      if (attractedNegative)
+        ballOnMouse('attracted', 'blue');
+      else 
+        ballOnMouse('attracted', 'red');    
+    } else {
+      if (attractorNegative)
+        ballOnMouse('attractor', 'blue');
+      else 
+        ballOnMouse('attractor', 'red');
+    }
 
   if (attractor) {
     attractor.show();
     unitVector.show(mouseX, mouseY);
     unitVector.len = 5;
+    fieldOnMouse.pointingAway = !attractorNegative;  
     fieldOnMouse.show(attractor.pos.x, attractor.pos.y, mouseX, mouseY);
     forceOnMouse.show(attractor.pos.x, attractor.pos.y, mouseX, mouseY);
     if (seeIsoLines.checked()) {
@@ -81,34 +94,46 @@ function mousePressed() {
   if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
     if (hasAttractor) {
       hasAttractor = false;
-      attractor = new Ball('attractor', mouseX, mouseY);
+      if (attractorNegative)
+        attractor = new Ball('attractor', 'minus', mouseX, mouseY);
+      else
+        attractor = new Ball('attractor', 'plus', mouseX, mouseY);
       unitVector = new Arrow(mouseX, mouseY, false, true);
       fieldOnMouse = new Arrow(mouseX, mouseY);
       forceOnMouse = new Arrow(mouseX, mouseY, true);
     } else {
-      attracted.push(new Ball('attracted', mouseX, mouseY));
+      if (attractedNegative)
+        attracted.push(new Ball('attracted', 'minus', mouseX, mouseY));
+      else
+        attracted.push(new Ball('attracted', 'plus', mouseX, mouseY));
     }    
   }
 }
 
 function keyPressed() {
   if (keyCode === ENTER) {
+    if (attractor) {
+      attractor.charge = attractor.charge == 'plus' ? 'minus' : 'plus';
+    }
+    attractorNegative = !attractorNegative;
     for (let i = 0; i < columns; i++) {
       for (let j = 0; j < columns; j++) {
         arrows[i][j].pointingAway = !arrows[i][j].pointingAway;
       }
     }
-    fieldOnMouse.pointingAway = !fieldOnMouse.pointingAway;
-    forceOnMouse.pointingAway = !forceOnMouse.pointingAway;
-    flyAway = !flyAway;
+  } else if (keyCode == 67) {
+    attractedNegative = !attractedNegative;
+    for (let a of attracted) {
+      a.charge = a.charge == 'plus' ? 'minus' : 'plus';
+    }
   }
   return false;
 }
 
-function ballOnMouse(colour) {
+function ballOnMouse(type, colour) {
     push();
     noStroke();
-    let size = colour == 'blue' ? 20 : 10;
+    let size = type == 'attractor' ? 20 : 10;
     let cyanCol = color(136, 252, 240);
     let redCol = color(232, 85, 85);
     col = colour == 'blue' ? cyanCol : redCol;
